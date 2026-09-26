@@ -37,4 +37,6 @@ Section Sejarah adalah kerangka kronologi contoh, bukan riwayat resmi. Isi perio
 
 Section Struktur Organisasi memakai jabatan, nama, dan hubungan kerja contoh. Ganti seluruhnya sesuai dokumen organisasi terbaru. Menu “Struktur” mengarah ke section ini dan menggantikan Galeri.
 
-Section Kontak belum memiliki nomor, email, alamat kantor lengkap, atau jam layanan resmi. Isilah data terverifikasi sebelum menambahkan tautan `tel:`, `mailto:`, atau peta. Lokasi umum “Kota Tomohon, Sulawesi Utara” mengikuti brief awal.
+Section Kontak belum memiliki nomor, email, alamat kantor lengkap, atau jam layanan resmi. Isilah data terverifikasi sebelum menambahkan tautan `tel:` dan `mailto:`. Sematan Google Maps memakai pencarian kawasan “Kamasi Satu, Tomohon Tengah, Kota Tomohon” dan memerlukan internet; ini **bukan** penanda titik kantor. Jika ingin menunjuk alamat kantor tertentu, ganti URL `iframe` dan tautan “Buka di Google Maps” setelah lokasi pastinya diverifikasi.
+
+Footer berisi navigasi situs, identitas wilayah, tautan ke situs Pemerintah Kota Tomohon, dan catatan bahwa data contoh belum boleh dianggap rujukan resmi. Tahun hak cipta diisi otomatis lewat `js/main.js`.

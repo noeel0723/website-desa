@@ -423,12 +423,12 @@
 
         <div class="contact__grid">
           <div class="contact__feature">
-            <p class="contact__feature-kicker">Kamasi 1 / Tomohon</p>
+            <p class="contact__feature-kicker">Kamasi Satu / Tomohon Tengah</p>
             <div>
               <h3>Mari tetap<br />terhubung.</h3>
               <p>Informasi yang jelas membantu warga menemukan layanan dan menghubungi pihak yang tepat.</p>
             </div>
-            <p class="contact__feature-location">Kota Tomohon, Sulawesi Utara <span aria-hidden="true">↗</span></p>
+            <p class="contact__feature-location">Tomohon Tengah, Sulawesi Utara <span aria-hidden="true">↗</span></p>
           </div>
 
           <div class="contact__details">
@@ -455,12 +455,75 @@
             </div>
           </div>
         </div>
-        <p class="contact__footnote">Belum ada tautan telepon, email, atau peta karena data kontak resmi belum tersedia.</p>
+        <div class="contact__map" id="contact-map">
+          <div class="contact__map-heading">
+            <div>
+              <p class="contact__map-kicker">Peta wilayah</p>
+              <h3>Temukan Kamasi Satu.</h3>
+              <p>Peta ini menampilkan kawasan Kelurahan Kamasi Satu, bukan penanda alamat kantor kelurahan.</p>
+            </div>
+            <a
+              class="contact__map-link"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Kamasi%20Satu%2C%20Tomohon%20Tengah%2C%20Kota%20Tomohon%2C%20Sulawesi%20Utara"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Buka di Google Maps <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact__map-frame">
+            <iframe
+              title="Peta Google Maps Kelurahan Kamasi Satu, Tomohon Tengah"
+              src="https://maps.google.com/maps?q=Kamasi%20Satu%2C%20Tomohon%20Tengah%2C%20Kota%20Tomohon%2C%20Sulawesi%20Utara&amp;z=15&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <p class="contact__footnote">Alamat kantor, nomor telepon, email, dan jam pelayanan masih menunggu data resmi. Peta memerlukan koneksi internet.</p>
       </section>
     </main>
     <footer class="site-footer container">
-      <p>Kamasi 1 <span>— Tomohon, Sulawesi Utara</span></p>
-      <a href="#home">Kembali ke atas <span aria-hidden="true">↑</span></a>
+      <div class="site-footer__main">
+        <div class="site-footer__about">
+          <a class="site-footer__brand" href="#home" aria-label="Kamasi 1, kembali ke beranda">
+            <img src="assets/icons/logo.svg" alt="" width="42" height="42" />
+            <span>Kamasi <strong>1</strong></span>
+          </a>
+          <p>Ruang digital untuk mengenal masyarakat, potensi, dan cerita Kamasi Satu dengan lebih dekat.</p>
+          <span class="site-footer__identity">Kelurahan Kamasi Satu · Tomohon</span>
+        </div>
+
+        <nav class="site-footer__column" aria-label="Jelajahi situs">
+          <h2>Jelajahi</h2>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#profile">Profil</a></li>
+            <li><a href="#population">Data Penduduk</a></li>
+            <li><a href="#umkm">UMKM</a></li>
+            <li><a href="#history">Sejarah</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__column" aria-label="Informasi warga">
+          <h2>Informasi</h2>
+          <ul>
+            <li><a href="#structure">Struktur Organisasi</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><a href="#contact-map">Peta Lokasi</a></li>
+            <li><a href="https://tomohon.go.id/" target="_blank" rel="noopener noreferrer">Pemerintah Kota Tomohon <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__column site-footer__location">
+          <h2>Wilayah</h2>
+          <address>Kelurahan Kamasi Satu<br />Kecamatan Tomohon Tengah<br />Kota Tomohon, Sulawesi Utara</address>
+          <p>Alamat kantor dan kanal kontak resmi akan ditambahkan setelah terverifikasi.</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© <span id="footer-year">2026</span> Kamasi Satu. Konten contoh ditandai dan perlu verifikasi sebelum menjadi rujukan resmi.</p>
+        <a href="#home">Kembali ke atas <span aria-hidden="true">↑</span></a>
+      </div>
     </footer>
   </body>
 </html>

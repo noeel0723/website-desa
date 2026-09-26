@@ -581,6 +581,26 @@
 .contact-card h3 { margin-top: 4px; font-size: 25px; font-weight: 550; letter-spacing: -0.05em; line-height: 1.15; }
 .contact-card p { margin-top: 14px; color: var(--text-secondary); font-size: 13px; line-height: 1.6; }
 
+.contact__map-kicker { color: var(--primary-light); font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.contact__map-link {
+  display: inline-flex;
+  min-height: 44px;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #d6e0d2;
+  border-radius: var(--radius-small);
+  background: #edf3e9;
+  color: var(--primary);
+  padding: 11px 16px;
+  font-size: 12px;
+  font-weight: 650;
+  transition: background 220ms ease, transform 220ms ease;
+}
+
+.contact__map-link:hover { background: #e1ebdc; transform: translateY(-2px); }
+
 @media (prefers-reduced-motion: reduce) {
   .site-header,
   .navbar__cta,
@@ -591,7 +611,8 @@
   .population__stat-card,
   .umkm-card,
   .structure-card,
-  .contact-card {
+  .contact-card,
+  .contact__map-link {
     transition: none;
   }
 }
