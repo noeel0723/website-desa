@@ -35,7 +35,7 @@
             <li><a class="navbar__link" href="#population">Data Penduduk</a></li>
             <li><a class="navbar__link" href="#umkm">UMKM</a></li>
             <li><a class="navbar__link" href="#history">Sejarah</a></li>
-            <li><a class="navbar__link" href="#gallery">Galeri</a></li>
+            <li><a class="navbar__link" href="#structure" aria-label="Struktur Organisasi">Struktur</a></li>
             <li><a class="navbar__link" href="#contact">Kontak</a></li>
           </ul>
           <a class="navbar__cta" href="#profile">Jelajahi Kamasi <span aria-hidden="true">↗</span></a>
@@ -58,7 +58,7 @@
             <li><a href="#population">Data Penduduk</a></li>
             <li><a href="#umkm">UMKM</a></li>
             <li><a href="#history">Sejarah</a></li>
-            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#structure" aria-label="Struktur Organisasi">Struktur</a></li>
             <li><a href="#contact">Kontak</a></li>
           </ul>
         </div>
@@ -177,10 +177,81 @@
 
         <p class="profile__footnote">Informasi dan visual pada bagian ini masih berupa contoh dan dapat Anda perbarui dengan data serta foto resmi Kamasi 1.</p>
       </section>
-      <section class="placeholder-section" id="population" aria-label="Data Penduduk Kamasi 1"></section>
+      <section class="population container" id="population" aria-labelledby="population-title">
+        <!-- TODO: replace every sample population figure, percentage, and progress value with verified Kamasi 1 data. -->
+        <div class="population__header">
+          <div>
+            <p class="section-eyebrow"><span class="section-eyebrow__dot" aria-hidden="true"></span> 02 / Data Penduduk</p>
+            <h2 class="population__title" id="population-title">Potret warga<br /><span>dalam angka.</span></h2>
+          </div>
+          <div class="population__header-side">
+            <span class="sample-badge">Simulasi data · bukan data resmi</span>
+            <p>Gambaran ringkas penduduk Kamasi 1. Angka pada bagian ini hanya contoh tampilan dan siap diganti dengan data yang telah diverifikasi.</p>
+          </div>
+        </div>
+
+        <div class="population__overview">
+          <div class="population__total">
+            <div class="population__total-top">
+              <span>Jumlah Penduduk</span>
+              <span>Data simulasi</span>
+            </div>
+            <div>
+              <strong>3.240<span>jiwa</span></strong>
+              <p>Total penduduk pada simulasi tampilan profil wilayah.</p>
+            </div>
+          </div>
+
+          <div class="population__summary-cards">
+            <div class="population__stat-card">
+              <span class="population__stat-icon" aria-hidden="true">01</span>
+              <div><strong>1.598</strong><span>Laki-laki</span></div>
+            </div>
+            <div class="population__stat-card">
+              <span class="population__stat-icon" aria-hidden="true">02</span>
+              <div><strong>1.642</strong><span>Perempuan</span></div>
+            </div>
+            <div class="population__stat-card population__stat-card--wide">
+              <span class="population__stat-icon" aria-hidden="true">03</span>
+              <div><strong>920</strong><span>Kepala Keluarga</span></div>
+              <p>Setiap angka di sini merupakan contoh dan belum mewakili catatan resmi.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="population__age-panel">
+          <div class="population__age-heading">
+            <div>
+              <p class="population__age-kicker">Sebaran penduduk</p>
+              <h3>Komposisi usia</h3>
+            </div>
+            <p>Persentase dihitung dari total simulasi 3.240 jiwa.</p>
+          </div>
+          <div class="population__age-list">
+            <div class="population__age-item">
+              <div class="population__age-meta"><span>0–14 tahun</span><strong>702 jiwa</strong></div>
+              <progress max="3240" value="702" aria-label="Usia 0 sampai 14 tahun: 702 dari 3.240 jiwa">21,7%</progress>
+              <span class="population__age-percent">21,7%</span>
+            </div>
+            <div class="population__age-item">
+              <div class="population__age-meta"><span>15–64 tahun</span><strong>2.190 jiwa</strong></div>
+              <progress max="3240" value="2190" aria-label="Usia 15 sampai 64 tahun: 2.190 dari 3.240 jiwa">67,6%</progress>
+              <span class="population__age-percent">67,6%</span>
+            </div>
+            <div class="population__age-item">
+              <div class="population__age-meta"><span>65 tahun ke atas</span><strong>348 jiwa</strong></div>
+              <progress max="3240" value="348" aria-label="Usia 65 tahun ke atas: 348 dari 3.240 jiwa">10,7%</progress>
+              <span class="population__age-percent">10,7%</span>
+            </div>
+          </div>
+          <p class="population__note">Data simulasi untuk kebutuhan desain. Perbarui angka, persentase, dan nilai grafik setelah data resmi tersedia.</p>
+        </div>
+      </section>
       <section class="placeholder-section" id="umkm" aria-label="UMKM Kamasi 1"></section>
       <section class="placeholder-section" id="history" aria-label="Sejarah Kamasi 1"></section>
-      <section class="placeholder-section" id="gallery" aria-label="Galeri Kamasi 1"></section>
+      <section class="placeholder-section" id="structure" aria-label="Struktur Organisasi Kamasi 1">
+        <!-- Struktur Organisasi Kamasi 1 akan dibuat selanjutnya -->
+      </section>
       <section class="placeholder-section" id="contact" aria-label="Kontak Kamasi 1"></section>
     </main>
   </body>

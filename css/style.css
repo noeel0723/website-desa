@@ -328,6 +328,102 @@ main {
   line-height: 1.6;
 }
 
+.population {
+  margin-top: 28px;
+  border: 1px solid #dfe6db;
+  border-radius: var(--radius-xl);
+  background: #edf2e9;
+  padding: clamp(36px, 5vw, 72px);
+  scroll-margin-top: 100px;
+}
+
+.population__header {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: end;
+  gap: 48px;
+  margin-bottom: 42px;
+}
+
+.population__title {
+  margin-top: 28px;
+  font-size: clamp(44px, 4.7vw, 62px);
+  font-weight: 550;
+  letter-spacing: -0.063em;
+  line-height: 1.06;
+}
+
+.population__title span { color: var(--primary); }
+
+.population__header-side {
+  max-width: 420px;
+  padding-bottom: 5px;
+}
+
+.population__header-side p {
+  margin-top: 18px;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.population__overview {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 16px;
+}
+
+.population__summary-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.population__age-panel {
+  margin-top: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-large);
+  background: var(--surface);
+  padding: clamp(28px, 3.5vw, 42px);
+}
+
+.population__age-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 35px;
+}
+
+.population__age-heading h3 {
+  margin-top: 8px;
+  font-size: 30px;
+  font-weight: 550;
+  letter-spacing: -0.045em;
+}
+
+.population__age-heading > p {
+  max-width: 250px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.population__age-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 34px;
+}
+
+.population__note {
+  margin-top: 30px;
+  padding-top: 19px;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
 .placeholder-section {
   min-height: 180px;
   scroll-margin-top: 92px;

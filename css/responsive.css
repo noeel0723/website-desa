@@ -31,6 +31,17 @@
   .profile__summary-text { font-size: 12px; }
   .profile__fact { padding: 13px; }
   .profile__fact dd { font-size: 13px; }
+  .population { padding: 36px; }
+  .population__header { gap: 28px; }
+  .population__title { font-size: clamp(40px, 4.8vw, 50px); }
+  .population__header-side p { font-size: 13px; }
+  .population__total { min-height: 320px; }
+  .population__total strong { font-size: 65px; }
+  .population__stat-card { min-height: 153px; padding: 18px; }
+  .population__stat-card strong { font-size: 32px; }
+  .population__stat-card--wide p { max-width: 125px; font-size: 10px; }
+  .population__age-list { gap: 20px; }
+  .population__age-meta { display: grid; gap: 5px; }
 }
 
 @media (max-width: 768px) {
@@ -120,6 +131,17 @@
   .profile__summary { gap: 32px; padding: 30px; }
   .profile__summary-title { margin-top: 20px; }
   .profile__summary-text { font-size: 14px; }
+  .population { margin-top: 16px; padding: 30px 24px; scroll-margin-top: 80px; }
+  .population__header { display: block; margin-bottom: 28px; }
+  .population__title { margin-top: 20px; font-size: clamp(38px, 7vw, 52px); }
+  .population__header-side { margin-top: 22px; }
+  .population__header-side p { margin-top: 13px; font-size: 14px; }
+  .population__overview { grid-template-columns: 1fr; gap: 12px; }
+  .population__total { min-height: 275px; }
+  .population__stat-card { min-height: 140px; }
+  .population__age-panel { margin-top: 12px; }
+  .population__age-list { grid-template-columns: 1fr; gap: 25px; }
+  .population__age-meta { display: flex; }
   .placeholder-section { min-height: 160px; scroll-margin-top: 80px; }
 }
 
@@ -148,6 +170,23 @@
   .profile__fact { padding: 13px 11px; }
   .profile__fact dd { font-size: 12px; }
   .profile__footnote { font-size: 12px; }
+  .population { padding: 25px 18px; border-radius: 24px; }
+  .population__title { font-size: clamp(36px, 9.4vw, 42px); }
+  .population__header-side p { font-size: 13px; }
+  .population__total { min-height: 255px; padding: 24px; border-radius: 18px; }
+  .population__total strong { font-size: 64px; }
+  .population__total strong span { font-size: 15px; }
+  .population__stat-card { min-height: 125px; padding: 15px; border-radius: 18px; }
+  .population__stat-card strong { font-size: 29px; }
+  .population__stat-card--wide { min-height: 105px; align-items: center; }
+  .population__stat-card--wide .population__stat-icon { align-self: center; }
+  .population__stat-card--wide > div { margin: 0 0 0 auto; text-align: right; }
+  .population__stat-card--wide p { display: none; }
+  .population__age-panel { padding: 24px 18px; border-radius: 18px; }
+  .population__age-heading { display: block; margin-bottom: 28px; }
+  .population__age-heading h3 { font-size: 27px; }
+  .population__age-heading > p { margin-top: 10px; }
+  .population__note { font-size: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
