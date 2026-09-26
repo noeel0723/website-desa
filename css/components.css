@@ -485,6 +485,102 @@
 .history__item h3 { margin-top: 10px; font-size: 23px; font-weight: 550; letter-spacing: -0.045em; line-height: 1.2; }
 .history__item div > p:last-child { max-width: 460px; margin-top: 11px; color: var(--text-secondary); font-size: 12px; line-height: 1.7; }
 
+.structure-card {
+  position: relative;
+  min-width: 0;
+  min-height: 210px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-large);
+  background: #f6f8f3;
+  padding: 28px;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.structure-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-soft); }
+
+.structure-card--lead {
+  display: flex;
+  width: min(100%, 510px);
+  min-height: 185px;
+  align-items: center;
+  gap: 28px;
+  margin-inline: auto;
+  border-color: #d5dfd0;
+  background: #eaf0e6;
+  padding: 33px;
+}
+
+.structure-card__index {
+  display: grid;
+  width: 39px;
+  height: 39px;
+  place-items: center;
+  border-radius: 12px;
+  background: #e7eee2;
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.structure-card--lead .structure-card__index { width: 54px; height: 54px; flex: none; border-radius: 17px; background: var(--primary); color: var(--surface); font-size: 13px; }
+.structure-card__body { min-width: 0; }
+.structure-card__eyebrow { margin-top: 21px; color: var(--primary-light); font-size: 10px; font-weight: 700; letter-spacing: 0.09em; line-height: 1.4; text-transform: uppercase; }
+.structure-card--lead .structure-card__eyebrow { margin-top: 0; }
+.structure-card h3 { margin-top: 11px; font-size: 26px; font-weight: 550; letter-spacing: -0.05em; line-height: 1.15; }
+.structure-card p:last-child { margin-top: 9px; color: var(--text-secondary); font-size: 12px; line-height: 1.6; }
+.structure-card__symbol { align-self: flex-start; margin-left: auto; color: var(--primary); font-size: 20px; }
+.structure__team .structure-card::before { position: absolute; bottom: 100%; left: 50%; height: 19px; border-left: 1px solid #d8e1d4; content: ""; }
+
+.contact__feature {
+  position: relative;
+  display: flex;
+  min-height: 535px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: var(--radius-large);
+  background: var(--primary);
+  color: var(--surface);
+  padding: clamp(30px, 3.5vw, 44px);
+}
+
+.contact__feature::after {
+  position: absolute;
+  top: -185px;
+  right: -155px;
+  width: 470px;
+  height: 470px;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 70px rgb(255 255 255 / 3%), 0 0 0 140px rgb(255 255 255 / 2%);
+  content: "";
+  pointer-events: none;
+}
+
+.contact__feature > * { position: relative; z-index: 1; }
+.contact__feature-kicker { color: #dce8d9; font-size: 11px; font-weight: 650; letter-spacing: 0.11em; text-transform: uppercase; }
+.contact__feature h3 { font-size: clamp(42px, 4.4vw, 59px); font-weight: 500; letter-spacing: -0.065em; line-height: 1.04; }
+.contact__feature div p { max-width: 330px; margin-top: 22px; color: #dce8d9; font-size: 14px; line-height: 1.7; }
+.contact__feature-location { display: flex; justify-content: space-between; gap: 18px; border-top: 1px solid rgb(255 255 255 / 25%); padding-top: 18px; color: #dce8d9; font-size: 11px; }
+.contact__feature-location span { color: var(--surface); font-size: 17px; }
+
+.contact-card {
+  display: flex;
+  min-height: 170px;
+  align-items: flex-start;
+  gap: 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-large);
+  background: var(--surface);
+  padding: 30px;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-soft); }
+.contact-card__index { display: grid; width: 39px; height: 39px; flex: none; place-items: center; border-radius: 12px; background: #e9efe5; color: var(--primary); font-size: 11px; font-weight: 700; }
+.contact-card h3 { margin-top: 4px; font-size: 25px; font-weight: 550; letter-spacing: -0.05em; line-height: 1.15; }
+.contact-card p { margin-top: 14px; color: var(--text-secondary); font-size: 13px; line-height: 1.6; }
+
 @media (prefers-reduced-motion: reduce) {
   .site-header,
   .navbar__cta,
@@ -493,7 +589,9 @@
   .info-card,
   .stats__card,
   .population__stat-card,
-  .umkm-card {
+  .umkm-card,
+  .structure-card,
+  .contact-card {
     transition: none;
   }
 }

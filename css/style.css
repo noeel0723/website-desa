@@ -425,7 +425,9 @@ main {
 }
 
 .umkm,
-.history {
+.history,
+.structure,
+.contact {
   margin-top: 28px;
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
@@ -435,9 +437,13 @@ main {
 
 .umkm { background: var(--surface); }
 .history { background: #f4f3ed; }
+.structure { background: var(--surface); }
+.contact { background: #edf1e9; }
 
 .umkm__header,
-.history__header {
+.history__header,
+.structure__header,
+.contact__header {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   align-items: end;
@@ -446,7 +452,9 @@ main {
 }
 
 .umkm__title,
-.history__title {
+.history__title,
+.structure__title,
+.contact__title {
   margin-top: 28px;
   font-size: clamp(42px, 4.5vw, 60px);
   font-weight: 550;
@@ -455,13 +463,19 @@ main {
 }
 
 .umkm__title span,
-.history__title span { color: var(--primary); }
+.history__title span,
+.structure__title span,
+.contact__title span { color: var(--primary); }
 
 .umkm__header-side,
-.history__header-side { max-width: 420px; padding-bottom: 5px; }
+.history__header-side,
+.structure__header-side,
+.contact__header-side { max-width: 420px; padding-bottom: 5px; }
 
 .umkm__header-side p,
-.history__header-side p {
+.history__header-side p,
+.structure__header-side p,
+.contact__header-side p {
   margin-top: 18px;
   color: var(--text-secondary);
   font-size: 15px;
@@ -520,7 +534,9 @@ main {
 .umkm__cards { display: grid; gap: 12px; }
 
 .umkm__footnote,
-.history__footnote {
+.history__footnote,
+.structure__footnote,
+.contact__footnote {
   margin-top: 22px;
   color: var(--text-secondary);
   font-size: 11px;
@@ -540,6 +556,55 @@ main {
   background: var(--surface);
   padding: clamp(28px, 3.5vw, 44px);
 }
+
+.structure__chart { max-width: 1120px; margin-inline: auto; }
+
+.structure__branches {
+  position: relative;
+  height: 56px;
+  margin-inline: 16.66%;
+  border-bottom: 1px solid #d8e1d4;
+}
+
+.structure__branches::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  border-left: 1px solid #d8e1d4;
+  content: "";
+}
+
+.structure__team {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 18px;
+}
+
+.contact__details { display: grid; gap: 12px; }
+
+.site-footer {
+  display: flex;
+  min-height: 104px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 28px 36px;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.site-footer p span { color: var(--text-secondary); font-weight: 400; }
+.site-footer a { border-bottom: 1px solid transparent; padding-bottom: 3px; }
+.site-footer a:hover { border-color: currentColor; }
 
 .placeholder-section {
   min-height: 180px;

@@ -1,6 +1,6 @@
 # Kamasi 1 — Tomohon
 
-Website statis Kamasi 1 dengan section Home, Profil, Data Penduduk, UMKM, dan Sejarah. Dibangun hanya dengan HTML5, CSS3, dan Vanilla JavaScript. Struktur Organisasi dan Kontak masih berupa anchor placeholder. Tidak ada proses build atau dependensi frontend.
+Website statis Kamasi 1 dengan section Home, Profil, Data Penduduk, UMKM, Sejarah, Struktur Organisasi, dan Kontak. Dibangun hanya dengan HTML5, CSS3, dan Vanilla JavaScript. Tidak ada proses build atau dependensi frontend.
 
 ## Menjalankan
 
@@ -21,7 +21,7 @@ Lalu buka `http://localhost:8000`.
 - `assets/images/hero/kamasi-hero.jpg` — gambar ilustratif hasil image generation, bukan foto dokumentasi lokasi.
 - `assets/images/profile/kamasi-profile.jpg` — ilustrasi suasana untuk section Profil, bukan foto dokumentasi lokasi.
 - `assets/images/umkm/umkm-illustration.jpg` — ilustrasi produk usaha, bukan dokumentasi UMKM tertentu.
-- `assets/images/history/`, `assets/images/structure/` — disiapkan untuk konten berikutnya.
+- `assets/images/history/`, `assets/images/structure/` — disiapkan untuk aset konten berikutnya.
 
 ## Sebelum publikasi
 
@@ -35,4 +35,6 @@ Section UMKM menampilkan tiga kategori contoh dan satu gambar ilustratif. Ganti 
 
 Section Sejarah adalah kerangka kronologi contoh, bukan riwayat resmi. Isi periode, tanggal, peristiwa, dan sumber yang dapat diverifikasi sebelum dipublikasikan sebagai informasi wilayah.
 
-Menu “Struktur” mengarah ke `#structure`, placeholder untuk section Struktur Organisasi yang menggantikan Galeri.
+Section Struktur Organisasi memakai jabatan, nama, dan hubungan kerja contoh. Ganti seluruhnya sesuai dokumen organisasi terbaru. Menu “Struktur” mengarah ke section ini dan menggantikan Galeri.
+
+Section Kontak belum memiliki nomor, email, alamat kantor lengkap, atau jam layanan resmi. Isilah data terverifikasi sebelum menambahkan tautan `tel:`, `mailto:`, atau peta. Lokasi umum “Kota Tomohon, Sulawesi Utara” mengikuti brief awal.
