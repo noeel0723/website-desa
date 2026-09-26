@@ -5,6 +5,7 @@ function initImageFallbacks() {
   const images = [
     [".hero__image", ".hero__visual", "hero__visual--image-missing"],
     [".profile__image", ".profile__image-wrap", "profile__image-wrap--image-missing"],
+    [".umkm__image", ".umkm__visual", "umkm__visual--image-missing"],
   ];
 
   images.forEach(([imageSelector, containerSelector, fallbackClass]) => {

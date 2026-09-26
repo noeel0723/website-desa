@@ -8,6 +8,8 @@
   .stats { left: 48px; }
   .profile__grid { grid-template-columns: 1fr 1fr; }
   .profile__image-wrap { min-height: 530px; }
+  .umkm__header,
+  .history__header { gap: 30px; }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -42,6 +44,25 @@
   .population__stat-card--wide p { max-width: 125px; font-size: 10px; }
   .population__age-list { gap: 20px; }
   .population__age-meta { display: grid; gap: 5px; }
+  .umkm,
+  .history { padding: 36px; }
+  .umkm__title,
+  .history__title { font-size: clamp(38px, 4.6vw, 48px); }
+  .umkm__header-side p,
+  .history__header-side p { font-size: 13px; }
+  .umkm__visual { min-height: 590px; }
+  .umkm-card { min-height: 188px; gap: 14px; padding: 19px; }
+  .umkm-card h3 { font-size: 21px; }
+  .umkm-card div > p:last-child { font-size: 11px; }
+  .history__grid { grid-template-columns: 0.88fr 1.12fr; }
+  .history__aside { min-height: 610px; padding: 27px; }
+  .history__aside h3 { font-size: 38px; }
+  .history__timeline-wrap { padding: 28px; }
+  .history__item { grid-template-columns: 38px minmax(0, 1fr); gap: 14px; }
+  .history__item-number { width: 38px; height: 38px; }
+  .history__item:not(:last-child)::before { top: 41px; left: 18px; }
+  .history__item h3 { font-size: 20px; }
+  .history__item div > p:last-child { font-size: 11px; }
 }
 
 @media (max-width: 768px) {
@@ -142,6 +163,22 @@
   .population__age-panel { margin-top: 12px; }
   .population__age-list { grid-template-columns: 1fr; gap: 25px; }
   .population__age-meta { display: flex; }
+  .umkm,
+  .history { margin-top: 16px; padding: 30px 24px; scroll-margin-top: 80px; }
+  .umkm__header,
+  .history__header { display: block; margin-bottom: 28px; }
+  .umkm__title,
+  .history__title { margin-top: 20px; font-size: clamp(36px, 7vw, 50px); }
+  .umkm__header-side,
+  .history__header-side { margin-top: 22px; }
+  .umkm__header-side p,
+  .history__header-side p { margin-top: 13px; font-size: 14px; }
+  .umkm__grid,
+  .history__grid { grid-template-columns: 1fr; gap: 14px; }
+  .umkm__visual { min-height: 390px; }
+  .umkm-card { min-height: 0; padding: 22px; }
+  .history__aside { min-height: 320px; }
+  .history__timeline-wrap { padding: 28px; }
   .placeholder-section { min-height: 160px; scroll-margin-top: 80px; }
 }
 
@@ -187,6 +224,27 @@
   .population__age-heading h3 { font-size: 27px; }
   .population__age-heading > p { margin-top: 10px; }
   .population__note { font-size: 12px; }
+  .umkm,
+  .history { padding: 25px 18px; border-radius: 24px; }
+  .umkm__title,
+  .history__title { font-size: clamp(33px, 9vw, 40px); }
+  .umkm__header-side p,
+  .history__header-side p { font-size: 13px; }
+  .umkm__visual { min-height: 300px; border-radius: 18px; }
+  .umkm__image-caption { right: 12px; bottom: 12px; left: auto; font-size: 10px; }
+  .umkm-card { gap: 13px; border-radius: 18px; padding: 18px; }
+  .umkm-card h3 { font-size: 21px; }
+  .umkm-card div > p:last-child { font-size: 12px; }
+  .history__aside { min-height: 300px; border-radius: 18px; padding: 24px; }
+  .history__aside h3 { font-size: 35px; }
+  .history__timeline-wrap { border-radius: 18px; padding: 24px 18px; }
+  .history__item { grid-template-columns: 36px minmax(0, 1fr); gap: 14px; }
+  .history__item-number { width: 36px; height: 36px; }
+  .history__item:not(:last-child)::before { top: 39px; left: 17px; }
+  .history__item h3 { font-size: 20px; }
+  .history__period { font-size: 9px; }
+  .umkm__footnote,
+  .history__footnote { font-size: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

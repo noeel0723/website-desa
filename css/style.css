@@ -424,6 +424,123 @@ main {
   line-height: 1.6;
 }
 
+.umkm,
+.history {
+  margin-top: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: clamp(36px, 5vw, 72px);
+  scroll-margin-top: 100px;
+}
+
+.umkm { background: var(--surface); }
+.history { background: #f4f3ed; }
+
+.umkm__header,
+.history__header {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: end;
+  gap: 48px;
+  margin-bottom: 42px;
+}
+
+.umkm__title,
+.history__title {
+  margin-top: 28px;
+  font-size: clamp(42px, 4.5vw, 60px);
+  font-weight: 550;
+  letter-spacing: -0.063em;
+  line-height: 1.08;
+}
+
+.umkm__title span,
+.history__title span { color: var(--primary); }
+
+.umkm__header-side,
+.history__header-side { max-width: 420px; padding-bottom: 5px; }
+
+.umkm__header-side p,
+.history__header-side p {
+  margin-top: 18px;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.umkm__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 18px;
+}
+
+.umkm__visual {
+  position: relative;
+  min-width: 0;
+  min-height: 570px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-large);
+  background: linear-gradient(145deg, #dfe8d7, #829579 55%, #486346);
+}
+
+.umkm__visual::after {
+  position: absolute;
+  inset: 60% 0 0;
+  background: linear-gradient(0deg, rgb(20 35 24 / 35%), transparent);
+  content: "";
+  pointer-events: none;
+}
+
+.umkm__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.umkm__visual--image-missing .umkm__image { display: none; }
+
+.umkm__image-caption {
+  position: absolute;
+  z-index: 1;
+  bottom: 22px;
+  left: 22px;
+  border: 1px solid rgb(255 255 255 / 40%);
+  border-radius: 100px;
+  background: rgb(255 255 255 / 91%);
+  color: var(--primary);
+  padding: 10px 15px;
+  font-size: 11px;
+  font-weight: 650;
+  backdrop-filter: blur(8px);
+}
+
+.umkm__cards { display: grid; gap: 12px; }
+
+.umkm__footnote,
+.history__footnote {
+  margin-top: 22px;
+  color: var(--text-secondary);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.history__grid {
+  display: grid;
+  grid-template-columns: 0.84fr 1.16fr;
+  gap: 18px;
+}
+
+.history__timeline-wrap {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-large);
+  background: var(--surface);
+  padding: clamp(28px, 3.5vw, 44px);
+}
+
 .placeholder-section {
   min-height: 180px;
   scroll-margin-top: 92px;
