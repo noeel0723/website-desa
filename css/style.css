@@ -108,14 +108,15 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 12px;
-  margin-top: 36px;
+  gap: 8px;
+  margin-top: 26px;
 }
 
 .hero__location {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 32px;
   color: var(--text-secondary);
   font-size: 11px;
   font-weight: 600;
@@ -199,16 +200,6 @@ main {
   height: 5px;
   background: var(--accent);
   box-shadow: none;
-}
-
-.hero__info-cards {
-  position: absolute;
-  z-index: 3;
-  top: 29%;
-  right: 28px;
-  display: grid;
-  width: min(245px, 41%);
-  gap: 12px;
 }
 
 .profile {

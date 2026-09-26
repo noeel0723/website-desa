@@ -83,67 +83,23 @@
 
 .button {
   display: inline-flex;
-  min-height: 52px;
+  min-height: 44px;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 12px;
   border-radius: 100px;
-  padding: 0 24px;
-  font-size: 13px;
+  padding: 0 18px;
+  font-size: 12px;
   font-weight: 650;
   transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
 }
 
 .button:hover { transform: translateY(-2px); }
-.button span { font-size: 18px; font-weight: 400; line-height: 1; }
+.button span { font-size: 16px; font-weight: 400; line-height: 1; }
 .button--primary { background: var(--primary); color: var(--surface); }
 .button--primary:hover { background: var(--primary-dark); }
 .button--text { color: var(--text-primary); }
 .button--text:hover { color: var(--primary); }
-
-.info-card {
-  display: flex;
-  min-height: 84px;
-  align-items: center;
-  gap: 12px;
-  border: 1px solid rgb(255 255 255 / 85%);
-  border-radius: var(--radius-medium);
-  background: rgb(255 255 255 / 92%);
-  box-shadow: var(--shadow-soft);
-  padding: 13px;
-  backdrop-filter: blur(10px);
-  transition: transform 220ms ease, box-shadow 220ms ease;
-}
-
-.info-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 34px rgb(35 52 38 / 13%);
-}
-
-.info-card__icon {
-  display: grid;
-  width: 37px;
-  height: 37px;
-  flex: none;
-  place-items: center;
-  border-radius: 12px;
-  background: #edf2e8;
-  color: var(--primary);
-}
-
-.info-card__icon svg {
-  width: 21px;
-  height: 21px;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.6;
-}
-
-.info-card__body { display: grid; min-width: 0; gap: 4px; }
-.info-card__body strong { font-size: 11px; font-weight: 700; line-height: 1.25; }
-.info-card__body small { color: var(--text-secondary); font-size: 9.5px; line-height: 1.4; }
-.info-card__arrow { align-self: flex-start; margin-left: auto; color: var(--primary-light); font-size: 14px; }
 
 .stats {
   position: absolute;
@@ -606,7 +562,6 @@
   .navbar__cta,
   .navbar__link,
   .button,
-  .info-card,
   .stats__card,
   .population__stat-card,
   .umkm-card,
