@@ -1,0 +1,19 @@
+:root {
+  color-scheme: light;
+  --background: #f7f7f3;
+  --surface: #ffffff;
+  --primary: #334d3b;
+  --primary-dark: #273d2e;
+  --primary-light: #70816a;
+  --accent: #dce7b5;
+  --text-primary: #181a18;
+  --text-secondary: #626a61;
+  --border: #e5e7df;
+  --radius-small: 10px;
+  --radius-medium: 16px;
+  --radius-large: 24px;
+  --radius-xl: 32px;
+  --container-width: 1280px;
+  --shadow-soft: 0 12px 34px rgb(35 52 38 / 8%);
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}

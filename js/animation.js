@@ -1,0 +1,19 @@
+export function initAnimations() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+
+  const targets = document.querySelectorAll(".info-card, .stats__card");
+  if (!targets.length) return;
+
+  document.documentElement.classList.add("reveal-ready");
+  targets.forEach((target) => target.classList.add("reveal-on-scroll"));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.08 });
+
+  targets.forEach((target) => observer.observe(target));
+}

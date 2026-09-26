@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mengenal Kamasi 1 lebih dekat: masyarakat, sejarah, potensi lokal, dan kehidupan di Kota Tomohon, Sulawesi Utara."
+    />
+    <meta name="theme-color" content="#f7f7f3" />
+    <title>Kamasi 1 — Tomohon</title>
+    <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/images/hero/kamasi-hero.jpg" as="image" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+    <header class="site-header" id="site-header">
+      <nav class="navbar container" aria-label="Navigasi utama">
+        <a class="navbar__brand" href="#home" aria-label="Kamasi 1, kembali ke beranda">
+          <img class="navbar__logo" src="assets/icons/logo.svg" alt="" width="32" height="32" />
+          <span class="navbar__brand-name">Kamasi <span>1</span></span>
+        </a>
+
+        <div class="navbar__desktop">
+          <ul class="navbar__menu">
+            <li><a class="navbar__link" href="#home" aria-current="page">Home</a></li>
+            <li><a class="navbar__link" href="#profile">Profil</a></li>
+            <li><a class="navbar__link" href="#population">Data Penduduk</a></li>
+            <li><a class="navbar__link" href="#umkm">UMKM</a></li>
+            <li><a class="navbar__link" href="#history">Sejarah</a></li>
+            <li><a class="navbar__link" href="#gallery">Galeri</a></li>
+            <li><a class="navbar__link" href="#contact">Kontak</a></li>
+          </ul>
+          <a class="navbar__cta" href="#profile">Jelajahi Kamasi <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <button
+          class="navbar__toggle"
+          type="button"
+          aria-label="Buka menu navigasi"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="navbar__mobile" id="mobile-menu" inert>
+          <ul class="navbar__mobile-list">
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#profile">Profil</a></li>
+            <li><a href="#population">Data Penduduk</a></li>
+            <li><a href="#umkm">UMKM</a></li>
+            <li><a href="#history">Sejarah</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero container" id="home" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <div class="hero__intro">
+            <p class="hero__eyebrow animate-in"><span class="hero__eyebrow-dot" aria-hidden="true"></span> Selamat datang di Kamasi 1</p>
+            <h1 class="hero__title animate-in" id="hero-title">
+              Mengenal Kamasi,<br /><span>Lebih Dekat.</span>
+            </h1>
+            <p class="hero__description animate-in">
+              Kenali masyarakat, sejarah, potensi lokal, dan kehidupan di Kamasi 1, Kota Tomohon, Sulawesi Utara.
+            </p>
+            <div class="hero__actions animate-in">
+              <a class="button button--primary" href="#profile">Jelajahi Kamasi <span aria-hidden="true">↗</span></a>
+              <a class="button button--text" href="#profile">Kenali Kami <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <p class="hero__location"><span class="hero__location-line" aria-hidden="true"></span> Kamasi 1 <span aria-hidden="true">/</span> Tomohon, Sulawesi Utara</p>
+        </div>
+
+        <div class="hero__visual animate-in">
+          <img
+            class="hero__image"
+            src="assets/images/hero/kamasi-hero.jpg"
+            alt="Ilustrasi lanskap pegunungan dan kawasan hijau yang terinspirasi dari alam Tomohon"
+            width="1536"
+            height="1024"
+            fetchpriority="high"
+          />
+          <div class="hero__visual-wash" aria-hidden="true"></div>
+          <div class="hero__visual-label"><span class="hero__visual-label-dot" aria-hidden="true"></span> Lanskap ilustratif Tomohon</div>
+
+          <div class="hero__info-cards" aria-label="Jelajahi Kamasi 1">
+            <a class="info-card" href="#profile">
+              <span class="info-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M3 18.5 9 8l3.2 5.2L15 9l6 9.5H3Z"/><path d="M7 18.5c2-2 3.5-2.8 5-2.8s3 .8 5 2.8"/></svg>
+              </span>
+              <span class="info-card__body"><strong>Alam &amp; Lingkungan</strong><small>Pesona kawasan sekitar Kamasi.</small></span>
+              <span class="info-card__arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="info-card" href="#population">
+              <span class="info-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3"/><path d="M3.5 19v-1.2A5.8 5.8 0 0 1 9.3 12h.4a5.8 5.8 0 0 1 5.8 5.8V19H3.5Z"/><path d="M16 5.2a3 3 0 0 1 0 5.6M17.5 12.6a5.5 5.5 0 0 1 3 5V19h-2"/></svg>
+              </span>
+              <span class="info-card__body"><strong>Masyarakat</strong><small>Kehidupan dan cerita warga lokal.</small></span>
+              <span class="info-card__arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="info-card" href="#umkm">
+              <span class="info-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 10h16l-1.1 10H5.1L4 10Z"/><path d="M3 10 5 4h14l2 6H3ZM9 4v6m6-6v6M8.5 15h7"/></svg>
+              </span>
+              <span class="info-card__body"><strong>Potensi Lokal</strong><small>Ruang tumbuh usaha masyarakat.</small></span>
+              <span class="info-card__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- TODO: replace with verified Kamasi 1 data -->
+        <div class="stats animate-in" aria-label="Statistik Kamasi 1, data sementara belum tersedia">
+          <div class="stats__card"><strong class="stats__number">X.XXX+</strong><span class="stats__label">Penduduk</span></div>
+          <div class="stats__card"><strong class="stats__number">XXX+</strong><span class="stats__label">Kepala Keluarga</span></div>
+          <div class="stats__card"><strong class="stats__number">XX+</strong><span class="stats__label">UMKM Lokal</span></div>
+          <div class="stats__card"><strong class="stats__number">XX</strong><span class="stats__label">Fasilitas Umum</span></div>
+        </div>
+      </section>
+
+      <section class="placeholder-section" id="profile" aria-label="Profil Kamasi 1">
+        <!-- Profil Kamasi 1 akan dibuat selanjutnya -->
+      </section>
+      <section class="placeholder-section" id="population" aria-label="Data Penduduk Kamasi 1"></section>
+      <section class="placeholder-section" id="umkm" aria-label="UMKM Kamasi 1"></section>
+      <section class="placeholder-section" id="history" aria-label="Sejarah Kamasi 1"></section>
+      <section class="placeholder-section" id="gallery" aria-label="Galeri Kamasi 1"></section>
+      <section class="placeholder-section" id="contact" aria-label="Kontak Kamasi 1"></section>
+    </main>
+  </body>
+</html>
