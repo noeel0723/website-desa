@@ -1,16 +1,23 @@
 import { initNavbar } from "./navbar.js";
 import { initAnimations } from "./animation.js";
 
-function initHeroImageFallback() {
-  const image = document.querySelector(".hero__image");
-  const visual = document.querySelector(".hero__visual");
-  if (!image || !visual) return;
+function initImageFallbacks() {
+  const images = [
+    [".hero__image", ".hero__visual", "hero__visual--image-missing"],
+    [".profile__image", ".profile__image-wrap", "profile__image-wrap--image-missing"],
+  ];
 
-  const showFallback = () => visual.classList.add("hero__visual--image-missing");
-  image.addEventListener("error", showFallback);
-  if (image.complete && image.naturalWidth === 0) showFallback();
+  images.forEach(([imageSelector, containerSelector, fallbackClass]) => {
+    const image = document.querySelector(imageSelector);
+    const container = document.querySelector(containerSelector);
+    if (!image || !container) return;
+
+    const showFallback = () => container.classList.add(fallbackClass);
+    image.addEventListener("error", showFallback);
+    if (image.complete && image.naturalWidth === 0) showFallback();
+  });
 }
 
 initNavbar();
 initAnimations();
-initHeroImageFallback();
+initImageFallbacks();

@@ -1,7 +1,7 @@
 export function initAnimations() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
 
-  const targets = document.querySelectorAll(".info-card, .stats__card");
+  const targets = document.querySelectorAll(".info-card, .stats__card, .profile__header, .profile__image-wrap, .profile__summary");
   if (!targets.length) return;
 
   document.documentElement.classList.add("reveal-ready");
