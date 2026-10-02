@@ -49,8 +49,9 @@ main {
 .hero__slide[hidden] { display: none; }
 .hero__slide[inert] { visibility: hidden; transition: visibility 0s 500ms; }
 .hero__slide--home { display: grid; grid-template-columns: 47% 53%; min-height: min(820px, max(760px, calc(100svh - 32px))); }
-.hero__slide--video { display: flex; flex-direction: column; gap: 26px; padding: 202px clamp(40px, 5vw, 72px) 40px; }
-.hero__video-intro { width: 100%; max-width: 960px; align-self: center; }
+.hero__slide--video { display: flex; flex-direction: column; gap: 26px; padding: 128px clamp(40px, 5vw, 72px) 40px; }
+.hero__video-intro { display: grid; width: 100%; max-width: 960px; grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr); column-gap: 32px; align-self: center; }
+.hero__video-intro > * { grid-column: 2; min-width: 0; }
 .hero__video-frame { position: relative; display: grid; width: 100%; max-width: 960px; flex: none; align-self: center; aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius-large); background: #d7dfd0; }
 .hero__video-poster,
 .hero__video { position: absolute; width: 100%; height: 100%; object-fit: cover; }

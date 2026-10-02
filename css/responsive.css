@@ -16,7 +16,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero__slide--home { min-height: 780px; grid-template-columns: 50% 50%; }
   .hero__tabs { top: 114px; left: 36px; }
-  .hero__slide--video { padding: 182px 36px 36px; }
+  .hero__slide--video { padding: 114px 36px 36px; }
   .hero__content { padding: 170px 0 265px 36px; }
   .hero__title { font-size: clamp(44px, 5.2vw, 55px); }
   .hero__description { max-width: 355px; font-size: 14px; }
@@ -153,8 +153,9 @@
   .hero__tabs { top: 86px; left: 24px; }
   .hero:has(.hero__tabs:not([hidden])) .hero__content { padding-top: 142px; }
   .hero__slide--video { padding: 150px 24px 24px; gap: 18px; }
+  .hero__video-intro { display: block; }
   .hero__video-frame { border-radius: var(--radius-medium); }
-  .hero__video-title { margin-top: 12px; font-size: 34px; }
+  .hero__video-title { font-size: 28px; }
   .hero__video-description { margin-top: 10px; line-height: 1.6; }
   .hero__video-badge { bottom: 10px; left: 10px; max-width: calc(100% - 20px); padding: 6px 10px; font-size: 10px; }
   .hero__content { display: block; padding: 102px 24px 35px; }
@@ -249,7 +250,7 @@
   .hero__tabs { left: 20px; }
   .hero__tab { min-height: 40px; padding-inline: 14px; font-size: 11px; }
   .hero__slide--video { padding-inline: 20px; }
-  .hero__video-title { font-size: 32px; }
+  .hero__video-title { font-size: 26px; }
   .hero__video-description { font-size: 13px; }
   .hero__title { font-size: clamp(40px, 10.9vw, 48px); letter-spacing: -0.075em; }
   .hero__description { font-size: 14px; }
