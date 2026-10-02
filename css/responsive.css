@@ -29,10 +29,10 @@
   .profile__title { font-size: clamp(38px, 4.6vw, 48px); }
   .profile__lead { font-size: 13px; }
   .profile__image-wrap { min-height: 580px; }
-  .profile__summary { padding: 25px; }
+  .profile__summary { padding: 24px; }
   .profile__summary-title { font-size: 31px; }
   .profile__summary-text { font-size: 12px; }
-  .profile__fact { padding: 13px; }
+  .profile__fact { padding: 11px 12px; }
   .profile__fact dd { font-size: 13px; }
   .population { padding: 36px; }
   .population__header { gap: 28px; }
@@ -164,8 +164,8 @@
   .profile__lead { max-width: 560px; margin-top: 20px; font-size: 14px; }
   .profile__grid { grid-template-columns: 1fr; gap: 14px; }
   .profile__image-wrap { min-height: 410px; }
-  .profile__summary { gap: 32px; padding: 30px; }
-  .profile__summary-title { margin-top: 20px; }
+  .profile__summary { gap: 24px; padding: 26px; }
+  .profile__summary-title { margin-top: 0; }
   .profile__summary-text { font-size: 14px; }
   .population { margin-top: 16px; padding: 30px 24px; scroll-margin-top: 80px; }
   .population__header { display: block; margin-bottom: 28px; }
@@ -238,11 +238,11 @@
   .profile__lead { font-size: 13px; }
   .profile__image-wrap { min-height: 300px; border-radius: 18px; }
   .profile__image-caption { right: 12px; bottom: 12px; font-size: 10px; }
-  .profile__summary { padding: 24px 18px; border-radius: 18px; }
+  .profile__summary { padding: 22px 18px; border-radius: 18px; }
   .profile__summary-title { font-size: 32px; }
   .profile__summary-text { font-size: 13px; }
   .profile__facts { gap: 8px; }
-  .profile__fact { padding: 13px 11px; }
+  .profile__fact { padding: 11px 10px; }
   .profile__fact dd { font-size: 12px; }
   .profile__footnote { font-size: 12px; }
   .population { padding: 25px 18px; border-radius: 24px; }
