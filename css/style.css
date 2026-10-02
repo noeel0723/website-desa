@@ -34,9 +34,6 @@ main {
 
 .hero {
   position: relative;
-  display: grid;
-  grid-template-columns: 47% 53%;
-  min-height: min(820px, max(760px, calc(100svh - 32px)));
   overflow: hidden;
   border: 1px solid rgb(225 229 219 / 80%);
   border-radius: var(--radius-xl);
@@ -44,6 +41,21 @@ main {
   box-shadow: 0 18px 55px rgb(40 51 38 / 5%);
   scroll-margin-top: 16px;
 }
+
+.hero__viewport { overflow: hidden; }
+.hero__track { display: grid; grid-template-columns: 100% 100%; transition: transform 500ms cubic-bezier(0.22, 0.68, 0.25, 1); }
+.hero--video .hero__track { transform: translateX(-100%); }
+.hero__slide { position: relative; min-width: 0; }
+.hero__slide[hidden] { display: none; }
+.hero__slide[inert] { visibility: hidden; transition: visibility 0s 500ms; }
+.hero__slide--home { display: grid; grid-template-columns: 47% 53%; min-height: min(820px, max(760px, calc(100svh - 32px))); }
+.hero__slide--video { display: flex; flex-direction: column; gap: 26px; padding: 202px clamp(40px, 5vw, 72px) 40px; }
+.hero__video-intro { max-width: 600px; }
+.hero__video-frame { position: relative; display: grid; flex: 1; min-height: 280px; overflow: hidden; border-radius: var(--radius-large); background: #d7dfd0; }
+.hero__video-poster,
+.hero__video { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+.hero__video { object-fit: contain; background: #181a18; }
+.hero__video-frame [hidden] { display: none; }
 
 .hero__content {
   position: relative;
@@ -429,17 +441,19 @@ main {
 .umkm { background: var(--surface); }
 .history { background: #f4f3ed; }
 .structure { background: var(--surface); }
-.contact { background: #edf1e9; }
+.contact { background: #fafbf7; padding: clamp(28px, 4vw, 52px); }
 
 .history__header,
-.structure__header,
-.contact__header {
+.structure__header {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   align-items: end;
   gap: 48px;
   margin-bottom: 42px;
 }
+
+.contact__header { display: block; margin-bottom: 30px; }
+.contact .contact__title { margin-top: 0; font-size: clamp(38px, 4.3vw, 54px); }
 
 .history__title,
 .structure__title,
@@ -634,10 +648,10 @@ main {
   gap: 18px;
 }
 
-.contact__details { display: grid; gap: 12px; }
+.contact__details { display: grid; gap: 0; }
 
 .contact__map {
-  margin-top: 18px;
+  margin-top: 28px;
   border: 1px solid var(--border);
   border-radius: var(--radius-large);
   background: var(--surface);
@@ -775,6 +789,8 @@ main {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .hero__track,
+  .hero__slide[inert] { transition: none; }
   .animate-in,
   .reveal-ready .reveal-on-scroll {
     animation: none !important;

@@ -25,6 +25,7 @@ function initImageFallbacks() {
 initNavbar();
 initAnimations();
 initUmkmTabs();
+if (typeof initHeroTabs === 'function') initHeroTabs();
 initImageFallbacks();
 
 const footerYear = document.getElementById("footer-year");

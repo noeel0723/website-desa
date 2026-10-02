@@ -19,6 +19,7 @@
     <script defer src="js/navbar.js"></script>
     <script defer src="js/animation.js"></script>
     <script defer src="js/umkm.js"></script>
+    <script defer src="js/hero.js"></script>
     <script defer src="js/main.js"></script>
   </head>
   <body>
@@ -68,40 +69,62 @@
 
     <main id="main-content">
       <section class="hero container" id="home" aria-labelledby="hero-title">
-        <div class="hero__content">
-          <div class="hero__intro">
-            <h1 class="hero__title animate-in" id="hero-title">
-              Selamat Datang<br /><span>Di Kamasi Satu.</span>
-            </h1>
-            <p class="hero__description animate-in">
-              Kenali masyarakat, sejarah, potensi lokal, dan kehidupan di Kamasi Satu, Kecamatan Tomohon Tengah,  Kota Tomohon, Sulawesi Utara.
-            </p>
-            <div class="hero__actions animate-in">
-              <a class="button button--primary" href="#profile">Jelajahi Kamasi I <span aria-hidden="true"></span></a>
-              <a class="button button--text" href="profile.html">Kenali Kami <span aria-hidden="true"></span></a>
+        <div class="hero__tabs" role="tablist" aria-label="Pilih tampilan beranda" hidden>
+          <button class="hero__tab" id="hero-tab-home" type="button" role="tab" aria-controls="hero-panel-home" aria-selected="true">Beranda</button>
+          <button class="hero__tab" id="hero-tab-video" type="button" role="tab" aria-controls="hero-panel-video" aria-selected="false" tabindex="-1">Video Profil <span aria-hidden="true">▷</span></button>
+        </div>
+        <div class="hero__viewport">
+          <div class="hero__track">
+            <div class="hero__slide hero__slide--home" id="hero-panel-home">
+              <div class="hero__content">
+                <div class="hero__intro">
+                  <h1 class="hero__title animate-in" id="hero-title">
+                    Selamat Datang<br /><span>Di Kamasi Satu.</span>
+                  </h1>
+                  <p class="hero__description animate-in">
+                    Kenali masyarakat, sejarah, potensi lokal, dan kehidupan di Kamasi Satu, Kecamatan Tomohon Tengah,  Kota Tomohon, Sulawesi Utara.
+                  </p>
+                  <div class="hero__actions animate-in">
+                    <a class="button button--primary" href="#profile">Jelajahi Kamasi I <span aria-hidden="true"></span></a>
+                    <a class="button button--text" href="profile.html">Kenali Kami <span aria-hidden="true"></span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero__visual animate-in">
+                <img
+                  class="hero__image"
+                  src="assets/images/hero/kamasi-hero%20.jpg"
+                  alt="Lahan pertanian, pepohonan, dan perbukitan di bawah langit cerah"
+                  width="4032"
+                  height="3024"
+                  fetchpriority="high"
+                />
+                <div class="hero__visual-wash" aria-hidden="true"></div>
+              </div>
+
+              <!-- TODO: replace with verified Kamasi 1 data -->
+              <div class="stats animate-in" aria-label="Statistik contoh Kamasi 1, belum terverifikasi">
+                <div class="stats__card"><strong class="stats__number">1.016</strong><span class="stats__label">Penduduk</span></div>
+                <div class="stats__card"><strong class="stats__number"></strong><span class="stats__label">Kepala Keluarga</span></div>
+                <div class="stats__card"><strong class="stats__number">15+</strong><span class="stats__label">UMKM Lokal</span></div>
+                <div class="stats__card"><strong class="stats__number">10+</strong><span class="stats__label">Fasilitas Umum</span></div>
+              </div>
+            </div>
+            <div class="hero__slide hero__slide--video" id="hero-panel-video" hidden>
+              <div class="hero__video-intro">
+                <p class="hero__eyebrow">KAMASI SATU · TOMOHON</p>
+                <h2 class="hero__video-title" id="hero-video-title">Cerita desa,<br /><span>lebih dekat.</span></h2>
+                <p class="hero__video-description" id="hero-video-status">Video profil sedang dipersiapkan. Untuk sementara, nikmati potret Kamasi Satu.</p>
+              </div>
+              <div class="hero__video-frame">
+                <!-- Tambahkan <source src="assets/videos/profil-kamasi.mp4" type="video/mp4" /> di dalam video setelah file tersedia. -->
+                <video class="hero__video" controls playsinline preload="none" poster="assets/images/hero/kamasi-hero%20.jpg" aria-label="Video profil Kamasi Satu" aria-describedby="hero-video-status" hidden></video>
+                <img class="hero__video-poster" src="assets/images/hero/kamasi-hero%20.jpg" alt="Potret kawasan Kamasi Satu sebagai pengganti sementara video profil" width="4032" height="3024" />
+                <span class="hero__video-badge">Video profil segera hadir</span>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="hero__visual animate-in">
-          <img
-            class="hero__image"
-            src="assets/images/hero/kamasi-hero%20.jpg"
-            alt="Lahan pertanian, pepohonan, dan perbukitan di bawah langit cerah"
-            width="4032"
-            height="3024"
-            fetchpriority="high"
-          />
-          <div class="hero__visual-wash" aria-hidden="true"></div>
-
-        </div>
-
-        <!-- TODO: replace with verified Kamasi 1 data -->
-        <div class="stats animate-in" aria-label="Statistik contoh Kamasi 1, belum terverifikasi">
-          <div class="stats__card"><strong class="stats__number">1.016</strong><span class="stats__label">Penduduk</span></div>
-          <div class="stats__card"><strong class="stats__number"></strong><span class="stats__label">Kepala Keluarga</span></div>
-          <div class="stats__card"><strong class="stats__number">15+</strong><span class="stats__label">UMKM Lokal</span></div>
-          <div class="stats__card"><strong class="stats__number">10+</strong><span class="stats__label">Fasilitas Umum</span></div>
         </div>
       </section>
 
@@ -285,28 +308,23 @@
           <div>
             <h2 class="contact__title" id="contact-title">Ada yang ingin<br /><span>ditanyakan?</span></h2>
           </div>
-          <div class="contact__header-side">
-          </div>
         </div>
 
 
           <div class="contact__details">
             <div class="contact-card">
-              <span class="contact-card__index" aria-hidden="true">01</span>
               <div>
                 <h3>Alamat Kantor</h3>
                 <p>Jl. Nawanua, Kelurahan Kamasi Satu, Kecamatan Tomohon Tengah, Kota Tomohon</p>
               </div>
             </div>
             <div class="contact-card">
-              <span class="contact-card__index" aria-hidden="true">02</span>
               <div>
                 <h3>Telepon &amp; Email</h3>
                 <p>Nomor telepon dan alamat email belum diisi</p>
               </div>
             </div>
             <div class="contact-card">
-              <span class="contact-card__index" aria-hidden="true">03</span>
               <div>
                 <h3>Jam Pelayanan</h3>
                 <p>Senin - Kamis: 07.30 - 16.30 WITA</p>

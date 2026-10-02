@@ -14,7 +14,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .hero { min-height: 780px; grid-template-columns: 50% 50%; }
+  .hero__slide--home { min-height: 780px; grid-template-columns: 50% 50%; }
+  .hero__tabs { top: 114px; left: 36px; }
+  .hero__slide--video { padding: 182px 36px 36px; }
   .hero__content { padding: 170px 0 265px 36px; }
   .hero__title { font-size: clamp(44px, 5.2vw, 55px); }
   .hero__description { max-width: 355px; font-size: 14px; }
@@ -72,9 +74,9 @@
   .structure-card--lead { min-height: 170px; }
   .contact__feature { min-height: 565px; padding: 28px; }
   .contact__feature h3 { font-size: 44px; }
-  .contact-card { min-height: 180px; gap: 15px; padding: 23px; }
+  .contact-card { padding: 22px 8px; }
   .contact-card h3 { font-size: 21px; }
-  .contact-card p { font-size: 12px; }
+  .contact-card p { font-size: 13px; }
   .contact__map-frame { height: 345px; }
   .aspiration { grid-template-columns: 1fr; gap: 28px; }
   .aspiration__title { font-size: 46px; }
@@ -146,7 +148,12 @@
 }
 
 @media (max-width: 767px) {
-  .hero { display: flex; min-height: 0; flex-direction: column; border-radius: 24px; }
+  .hero { border-radius: 24px; }
+  .hero__slide--home { display: flex; min-height: 0; flex-direction: column; }
+  .hero__tabs { top: 86px; left: 24px; }
+  .hero:has(.hero__tabs:not([hidden])) .hero__content { padding-top: 142px; }
+  .hero__slide--video { padding: 154px 24px 20px; gap: 22px; }
+  .hero__video-frame { min-height: 340px; }
   .hero__content { display: block; padding: 102px 24px 35px; }
   .hero__eyebrow { font-size: 10px; }
   .hero__title { width: auto; max-width: none; margin-top: 24px; font-size: clamp(42px, 7vw, 54px); }
@@ -218,7 +225,6 @@
   .structure__neighborhoods-grid { gap: 12px; margin-top: 20px; }
   .contact__grid { grid-template-columns: 1fr; gap: 14px; }
   .contact__feature { min-height: 340px; }
-  .contact-card { min-height: 125px; }
   .contact__map { margin-top: 14px; padding: 24px; scroll-margin-top: 80px; }
   .contact__map-heading { align-items: flex-start; flex-direction: column; gap: 18px; }
   .contact__map-frame { height: 340px; margin-top: 20px; }
@@ -237,6 +243,11 @@
 
 @media (max-width: 480px) {
   .hero__content { padding: 96px 20px 29px; }
+  .hero__tabs { left: 20px; }
+  .hero__tab { min-height: 40px; padding-inline: 14px; font-size: 11px; }
+  .hero__slide--video { padding-inline: 20px; }
+  .hero__video-title { font-size: 36px; }
+  .hero__video-description { font-size: 13px; }
   .hero__title { font-size: clamp(40px, 10.9vw, 48px); letter-spacing: -0.075em; }
   .hero__description { font-size: 14px; }
   .hero__actions { gap: 4px; }
@@ -317,9 +328,11 @@
   .contact__feature { min-height: 300px; border-radius: 18px; padding: 24px; }
   .contact__feature h3 { font-size: 40px; }
   .contact__feature div p { font-size: 13px; }
-  .contact-card { min-height: 115px; gap: 14px; border-radius: 18px; padding: 19px; }
+  .contact .contact__title { font-size: clamp(33px, 9vw, 40px); }
+  .contact-card { padding: 20px 6px; }
+  .contact-card:first-child { padding-inline: 16px; }
   .contact-card h3 { font-size: 21px; }
-  .contact-card p { margin-top: 10px; font-size: 12px; }
+  .contact-card p { font-size: 13px; }
   .contact__map { border-radius: 18px; padding: 20px 18px; }
   .contact__map-heading h3 { font-size: 27px; }
   .contact__map-heading p:last-child { font-size: 12px; }

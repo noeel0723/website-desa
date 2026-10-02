@@ -175,6 +175,14 @@
 .profile-page__age-estimates dd small { display: block; margin-top: 2px; color: var(--text-secondary); font-size: 10px; font-weight: 400; }
 .profile-page__stat-note { margin-top: 14px; color: var(--text-secondary); font-size: 11px; line-height: 1.6; }
 .profile-page__population-source { margin-top: 26px; border-top: 1px solid var(--border); padding-top: 14px; color: var(--text-secondary); font-size: 11px; line-height: 1.65; }
+.profile-page__religion { margin-top: 30px; border-top: 1px solid var(--border); padding-top: 24px; }
+.profile-page__religion h3 { font-size: 19px; font-weight: 550; letter-spacing: -0.035em; }
+.profile-page__religion-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 16px 0 0; }
+.profile-page__religion-grid > div { min-width: 0; border: 1px solid var(--border); border-radius: var(--radius-medium); background: #edf2e9; padding: 20px; }
+.profile-page__religion-grid dt { color: var(--text-secondary); font-size: 12px; }
+.profile-page__religion-grid dd { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; margin: 12px 0 0; }
+.profile-page__religion-grid strong { color: var(--primary); font-size: 34px; font-weight: 550; letter-spacing: -0.05em; line-height: 1; }
+.profile-page__religion-grid dd span { color: var(--text-secondary); font-size: 11px; }
 
 .profile-page__timeline { margin: 50px 0 0; padding: 0; list-style: none; }
 .profile-page__timeline li { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 35px; border-top: 1px solid #dce3d8; padding: 28px 0 32px; }
@@ -281,6 +289,10 @@
   .profile-page__metrics dd span,
   .profile-page__metrics dt { font-size: 11px; }
   .profile-page__population-intro { font-size: 13px; }
+  .profile-page__religion-grid { gap: 8px; }
+  .profile-page__religion-grid > div { padding: 14px 10px; border-radius: var(--radius-small); }
+  .profile-page__religion-grid strong { font-size: 26px; }
+  .profile-page__religion-grid dd { gap: 4px; }
   .profile-page__gender-legend { gap: 12px; }
   .profile-page__timeline li { grid-template-columns: 62px minmax(0, 1fr); gap: 10px; }
   .profile-page__year { font-size: 20px; }

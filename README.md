@@ -34,6 +34,20 @@ Lalu buka `http://localhost:8000/` dan `http://localhost:8000/profile.html`.
 - Tab UMKM sudah menampilkan foto Pabrik Tahu, Kacang Hai, dan Pabrik Roti. Detail pengelola, alamat, serta ragam produk masih perlu diverifikasi. Struktur organisasi masih mengandung konten contoh. Kartu Lingkungan I–III memakai placeholder untuk nama kepala dan wakil; pastikan keberadaan jabatan wakil dari struktur resmi sebelum mengisinya. Perbarui nama, jabatan, deskripsi, foto, dan izin publikasi sebelum ditampilkan sebagai informasi resmi.
 - Sematan Google Maps mencari kawasan Kamasi Satu, bukan menandai titik kantor kelurahan. Ganti URL sematan setelah koordinat kantor dipastikan.
 
+## Video profil pada Beranda
+
+Menu **Beranda / Video Profil** menggeser tampilan hero secara manual, tanpa autoplay. Selama belum ada video, tampilan memakai gambar hero lokal. Untuk memasang video:
+
+1. Buat folder `assets/videos/` dan simpan video, misalnya `profil-kamasi.mp4`.
+2. Pada `index.html`, tambahkan `<source src="assets/videos/profil-kamasi.mp4" type="video/mp4" />` di dalam elemen `<video class="hero__video">` (contoh tersedia pada komentar HTML).
+3. Muat ulang halaman. JavaScript menampilkan pemutar secara otomatis jika sumber video diisi; sumber yang gagal dimuat kembali ke gambar placeholder.
+
+Gunakan video yang dioptimalkan untuk web. Pemutaran hanya dimulai saat pengunjung menekan Putar, dan berhenti ketika kembali ke Beranda. Menu mendukung tombol panah, Home/End, serta reduced motion. Tambahkan `<track kind="captions" ... />` jika video mempunyai narasi agar aksesibel.
+
+## Agama penduduk
+
+Data pada halaman Profil mengikuti jumlah yang diberikan pengguna: Katolik **75**, Islam **36**, Kristen **955**. Total **1.066 jiwa**. Angka dapat diganti langsung pada `.profile-page__religion-grid` di `profile.html`.
+
 ## Aspirasi warga
 
 Section `#aspiration` berada setelah Kontak. Tautan navbar dan footer di kedua halaman mengarah ke section ini. Tombol WhatsApp membuka `https://wa.me/6285396323894` dengan format pesan yang sudah diisi; pesan baru terkirim setelah warga melengkapi isi dan menekan Kirim di WhatsApp. Nomor tampilan **+62 853-9632-3894** berasal dari nomor yang diberikan untuk proyek ini. Tautan juga berfungsi jika JavaScript dimatikan.
