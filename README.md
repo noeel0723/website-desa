@@ -18,7 +18,7 @@ Lalu buka `http://localhost:8000`.
 - `css/variables.css` — warna, radius, tipografi, dan token desain.
 - `css/reset.css`, `style.css`, `components.css`, `responsive.css` — reset, layout, komponen, dan breakpoint.
 - `js/main.js`, `navbar.js`, `animation.js` — inisialisasi, navigasi, dan animasi.
-- `assets/images/hero/kamasi-hero.jpg` — gambar ilustratif hasil image generation, bukan foto dokumentasi lokasi.
+- `assets/images/hero/kamasi-hero .jpg` — foto yang digunakan pada hero; spasi sebelum `.jpg` dikodekan sebagai `%20` pada URL di `index.html`.
 - `assets/images/profile/kamasi-profile.jpg` — ilustrasi suasana untuk section Profil, bukan foto dokumentasi lokasi.
 - `assets/images/umkm/umkm-illustration.jpg` — ilustrasi produk usaha, bukan dokumentasi UMKM tertentu.
 - `assets/images/history/`, `assets/images/structure/` — disiapkan untuk aset konten berikutnya.
