@@ -114,7 +114,9 @@
 .profile-page__population .profile-page__section-heading { display: block; }
 .profile-page__population .profile-page__section-heading h2 { margin-top: 12px; font-size: clamp(36px, 4.2vw, 54px); }
 .profile-page__population-intro { max-width: 720px; margin-top: 16px; color: var(--text-secondary); font-size: 15px; line-height: 1.65; }
-.profile-page__history { background: #fafbf7; }
+.profile-page__history { background: #fafbf7; padding: clamp(28px, 4vw, 52px); }
+.profile-page__history .profile-page__section-heading { display: block; }
+.profile-page__history .profile-page__section-heading h2 { margin-top: 12px; font-size: clamp(30px, 3.5vw, 42px); line-height: 1.15; }
 .profile-page__leaders { background: var(--surface); }
 
 .profile-page__section-heading { display: grid; grid-template-columns: 1fr 0.9fr; align-items: end; gap: 70px; }
@@ -184,12 +186,12 @@
 .profile-page__religion-grid strong { color: var(--primary); font-size: 34px; font-weight: 550; letter-spacing: -0.05em; line-height: 1; }
 .profile-page__religion-grid dd span { color: var(--text-secondary); font-size: 11px; }
 
-.profile-page__timeline { margin: 50px 0 0; padding: 0; list-style: none; }
-.profile-page__timeline li { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 35px; border-top: 1px solid #dce3d8; padding: 28px 0 32px; }
+.profile-page__timeline { margin: 26px 0 0; padding: 0; list-style: none; }
+.profile-page__timeline li { display: grid; grid-template-columns: 88px minmax(0, 1fr); align-items: start; gap: 24px; border-top: 1px solid var(--border); padding: 20px 0; }
 .profile-page__timeline li:last-child { border-bottom: 1px solid #dce3d8; }
-.profile-page__year { color: var(--primary); font-size: 30px; font-weight: 650; letter-spacing: -0.05em; }
-.profile-page__timeline h3 { font-size: 27px; font-weight: 550; letter-spacing: -0.04em; line-height: 1.2; }
-.profile-page__timeline p { max-width: 780px; margin-top: 13px; color: var(--text-secondary); font-size: 15px; line-height: 1.75; }
+.profile-page__year { color: var(--primary); font-size: 24px; font-weight: 600; letter-spacing: -0.045em; line-height: 1.2; }
+.profile-page__timeline h3 { font-size: 20px; font-weight: 550; letter-spacing: -0.035em; line-height: 1.3; }
+.profile-page__timeline p { max-width: 780px; margin-top: 7px; color: var(--text-secondary); font-size: 13px; line-height: 1.65; }
 .profile-page__timeline a { margin-top: 15px; }
 
 .profile-page__leaders .profile-page__section-heading { display: block; text-align: center; }
@@ -266,11 +268,10 @@
   .profile-page__gender-label { font-size: 12px; gap: 6px; }
   .profile-page__gender-label small { flex-basis: 100%; margin-left: 14px; }
   .profile-page__population-details { grid-template-columns: 1fr; gap: 26px; margin-top: 28px; }
-  .profile-page__timeline { margin-top: 32px; }
-  .profile-page__timeline li { grid-template-columns: 80px minmax(0, 1fr); gap: 15px; padding-block: 22px; }
-  .profile-page__year { font-size: 24px; }
-  .profile-page__timeline h3 { font-size: 22px; }
-  .profile-page__timeline p { font-size: 13px; }
+  .profile-page__timeline { margin-top: 22px; }
+  .profile-page__timeline li { grid-template-columns: 62px minmax(0, 1fr); gap: 16px; padding-block: 18px; }
+  .profile-page__year { font-size: 22px; }
+  .profile-page__timeline h3 { font-size: 19px; }
   .profile-page__leader-list { gap: 18px; margin-top: 42px; }
   .profile-page__leader { flex-basis: 250px; }
   .profile-page__next { align-items: flex-start; flex-direction: column; margin-top: 16px; padding: 30px 26px; }
@@ -294,9 +295,9 @@
   .profile-page__religion-grid strong { font-size: 26px; }
   .profile-page__religion-grid dd { gap: 4px; }
   .profile-page__gender-legend { gap: 12px; }
-  .profile-page__timeline li { grid-template-columns: 62px minmax(0, 1fr); gap: 10px; }
+  .profile-page__timeline li { grid-template-columns: 52px minmax(0, 1fr); gap: 12px; padding-block: 16px; }
   .profile-page__year { font-size: 20px; }
-  .profile-page__timeline h3 { font-size: 19px; }
+  .profile-page__timeline h3 { font-size: 18px; }
   .profile-page__leaders .profile-page__section-heading h2 { font-size: 36px; }
   .profile-page__leader-list { margin-top: 38px; }
   .profile-page__leader-card { min-height: 250px; }
