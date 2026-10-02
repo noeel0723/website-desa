@@ -8,7 +8,6 @@
   .stats { left: 48px; }
   .profile__grid { grid-template-columns: 1fr 1fr; }
   .profile__image-wrap { min-height: 530px; }
-  .umkm__header,
   .history__header,
   .structure__header,
   .contact__header { gap: 30px; }
@@ -49,18 +48,16 @@
   .history,
   .structure,
   .contact { padding: 36px; }
-  .umkm__title,
   .history__title,
   .structure__title,
   .contact__title { font-size: clamp(38px, 4.6vw, 48px); }
-  .umkm__header-side p,
   .history__header-side p,
   .structure__header-side p,
   .contact__header-side p { font-size: 13px; }
-  .umkm__visual { min-height: 590px; }
-  .umkm-card { min-height: 188px; gap: 14px; padding: 19px; }
-  .umkm-card h3 { font-size: 21px; }
-  .umkm-card div > p:last-child { font-size: 11px; }
+  .umkm__title { font-size: clamp(45px, 5.5vw, 58px); }
+  .umkm__visual { min-height: 390px; }
+  .umkm__detail h3 { font-size: 40px; }
+  .umkm__detail-lead { font-size: 16px; }
   .history__grid { grid-template-columns: 0.88fr 1.12fr; }
   .history__aside { min-height: 610px; padding: 27px; }
   .history__aside h3 { font-size: 38px; }
@@ -182,26 +179,29 @@
   .history,
   .structure,
   .contact { margin-top: 16px; padding: 30px 24px; scroll-margin-top: 80px; }
-  .umkm__header,
   .history__header,
   .structure__header,
   .contact__header { display: block; margin-bottom: 28px; }
-  .umkm__title,
   .history__title,
   .structure__title,
   .contact__title { margin-top: 20px; font-size: clamp(36px, 7vw, 50px); }
-  .umkm__header-side,
   .history__header-side,
   .structure__header-side,
   .contact__header-side { margin-top: 22px; }
-  .umkm__header-side p,
   .history__header-side p,
   .structure__header-side p,
   .contact__header-side p { margin-top: 13px; font-size: 14px; }
-  .umkm__grid,
   .history__grid { grid-template-columns: 1fr; gap: 14px; }
-  .umkm__visual { min-height: 390px; }
-  .umkm-card { min-height: 0; padding: 22px; }
+  .umkm__title { font-size: clamp(40px, 8vw, 52px); }
+  .umkm__intro { margin-top: 18px; font-size: 16px; }
+  .umkm__tabs { margin-top: 27px; }
+  .umkm__tab { min-height: 55px; padding: 10px 8px; font-size: 13px; }
+  .umkm__panel { grid-template-columns: 1fr; gap: 24px; margin-top: 24px; }
+  .umkm__visual { min-height: 340px; }
+  .umkm__detail { padding-block: 0; }
+  .umkm__detail h3 { font-size: 42px; }
+  .umkm__detail-lead { margin-top: 15px; font-size: 16px; }
+  .umkm__detail-note { margin-top: 20px; padding-top: 17px; }
   .history__aside { min-height: 320px; }
   .history__timeline-wrap { padding: 28px; }
   .structure__branches { display: none; }
@@ -209,6 +209,9 @@
   .structure__team .structure-card::before { display: none; }
   .structure-card { min-height: 0; padding: 22px; }
   .structure-card--lead { width: 100%; min-height: 155px; }
+  .structure__neighborhoods { margin-top: 36px; padding-top: 28px; scroll-margin-top: 80px; }
+  .structure__neighborhoods-header { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .structure__neighborhoods-grid { gap: 12px; margin-top: 20px; }
   .contact__grid { grid-template-columns: 1fr; gap: 14px; }
   .contact__feature { min-height: 340px; }
   .contact-card { min-height: 125px; }
@@ -266,19 +269,23 @@
   .history,
   .structure,
   .contact { padding: 25px 18px; border-radius: 24px; }
-  .umkm__title,
   .history__title,
   .structure__title,
   .contact__title { font-size: clamp(33px, 9vw, 40px); }
-  .umkm__header-side p,
   .history__header-side p,
   .structure__header-side p,
   .contact__header-side p { font-size: 13px; }
-  .umkm__visual { min-height: 300px; border-radius: 18px; }
+  .umkm__title { font-size: clamp(37px, 10vw, 44px); }
+  .umkm__intro { font-size: 14px; }
+  .umkm__tabs { gap: 3px; }
+  .umkm__tab { min-height: 49px; padding-inline: 3px; font-size: 11px; }
+  .umkm__tab span { display: none; }
+  .umkm__visual { min-height: 280px; border-radius: 18px; }
+  .umkm__visual--placeholder { padding: 24px; }
+  .umkm__visual--placeholder strong { font-size: 54px; }
   .umkm__image-caption { right: 12px; bottom: 12px; left: auto; font-size: 10px; }
-  .umkm-card { gap: 13px; border-radius: 18px; padding: 18px; }
-  .umkm-card h3 { font-size: 21px; }
-  .umkm-card div > p:last-child { font-size: 12px; }
+  .umkm__detail h3 { font-size: 37px; }
+  .umkm__detail-lead { font-size: 14px; }
   .history__aside { min-height: 300px; border-radius: 18px; padding: 24px; }
   .history__aside h3 { font-size: 35px; }
   .history__timeline-wrap { border-radius: 18px; padding: 24px 18px; }
@@ -296,6 +303,8 @@
   .structure-card--lead .structure-card__index { width: 44px; height: 44px; }
   .structure-card h3 { font-size: 22px; }
   .structure-card__symbol { display: none; }
+  .structure__neighborhoods-header h3 { font-size: 28px; }
+  .neighborhood-card { border-radius: 18px; padding: 20px; }
   .contact__feature { min-height: 300px; border-radius: 18px; padding: 24px; }
   .contact__feature h3 { font-size: 40px; }
   .contact__feature div p { font-size: 13px; }

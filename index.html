@@ -144,67 +144,68 @@
 
       </section>
       <section class="umkm container" id="umkm" aria-labelledby="umkm-title">
-        <!-- TODO: replace all sample UMKM categories, descriptions, and illustration with verified Kamasi 1 businesses. -->
+        <!-- TODO: complete each business profile with verified owner, address, products, and permitted photos. -->
         <div class="umkm__header">
-          <div>
-            <h2 class="umkm__title" id="umkm-title">Potensi UMKM<br /><span>Lokal</span></h2>
-          </div>
-          <div class="umkm__header-side">
+          <p class="umkm__eyebrow">USAHA LOKAL / KAMASI SATU</p>
+          <h2 class="umkm__title" id="umkm-title">Potensi UMKM<br /><span>Kamasi Satu.</span></h2>
+          <p class="umkm__intro">Kenali usaha pangan yang menjadi bagian dari potensi lokal Kamasi Satu. Pilih salah satu untuk melihat ringkasan dan dokumentasinya.</p>
+        </div>
+
+        <div class="umkm__tabs" role="tablist" aria-label="Pilih usaha lokal">
+          <button class="umkm__tab" id="umkm-tab-tahu" type="button" role="tab" aria-selected="true" aria-controls="umkm-panel-tahu" tabindex="0"><span aria-hidden="true">01</span>Pabrik Tahu</button>
+          <button class="umkm__tab" id="umkm-tab-kacang" type="button" role="tab" aria-selected="false" aria-controls="umkm-panel-kacang" tabindex="-1"><span aria-hidden="true">02</span>Kacang Hai</button>
+          <button class="umkm__tab" id="umkm-tab-roti" type="button" role="tab" aria-selected="false" aria-controls="umkm-panel-roti" tabindex="-1"><span aria-hidden="true">03</span>Pabrik Roti</button>
+        </div>
+
+        <div class="umkm__panel" id="umkm-panel-tahu" role="tabpanel" aria-labelledby="umkm-tab-tahu" tabindex="0">
+          <figure class="umkm__visual">
+            <img class="umkm__image" src="assets/images/umkm/pabrik-tahu.jpg" alt="Potongan tahu dalam beberapa wadah pada area produksi" width="4032" height="3024" loading="lazy" decoding="async" />
+            <figcaption class="umkm__image-caption">Dokumentasi pembuatan tahu</figcaption>
+          </figure>
+          <div class="umkm__detail">
+            <p class="umkm__detail-kicker">01 / USAHA PANGAN</p>
+            <h3>Pabrik Tahu</h3>
+            <p class="umkm__detail-lead">Produksi tahu menjadi salah satu potensi usaha pangan yang ditampilkan di Kamasi Satu. Foto ini memperlihatkan tahu yang disiapkan dalam wadah produksi.</p>
+            <p class="umkm__detail-note">Nama pengelola, alamat, dan informasi produk akan dilengkapi setelah data usaha tersedia.</p>
           </div>
         </div>
 
-        <div class="umkm__grid">
-          <figure class="umkm__visual">
-            <img
-              class="umkm__image"
-              src="assets/images/umkm/umkm-illustration.jpg"
-              alt="Ilustrasi keranjang anyaman, makanan kemasan sederhana, dan bunga di meja usaha kecil"
-              width="1536"
-              height="1024"
-              loading="lazy"
-              decoding="async"
-            />
+        <div class="umkm__panel" id="umkm-panel-kacang" role="tabpanel" aria-labelledby="umkm-tab-kacang" tabindex="0" hidden>
+          <div class="umkm__visual umkm__visual--placeholder umkm__visual--kacang">
+            <span class="umkm__visual-label">PRODUK LOKAL / 02</span>
+            <strong>Kacang<br />Hai.</strong>
+            <span class="umkm__visual-status">Foto usaha belum tersedia</span>
+          </div>
+          <div class="umkm__detail">
+            <p class="umkm__detail-kicker">02 / USAHA PANGAN</p>
+            <h3>Kacang Hai</h3>
+            <p class="umkm__detail-lead">Kacang Hai ditampilkan sebagai salah satu potensi olahan pangan lokal. Cerita usaha, ragam produk, dan dokumentasi dapat ditambahkan setelah informasi dari pengelola tersedia.</p>
+            <p class="umkm__detail-note">Foto dan detail usaha masih menunggu data yang dapat dipublikasikan.</p>
+          </div>
+        </div>
 
-          </figure>
-
-          <div class="umkm__cards">
-            <article class="umkm-card">
-              <span class="umkm-card__number" aria-hidden="true">01</span>
-              <div>
-                <p class="umkm-card__category">Kategori Kuliner</p>
-                <h3>Pabrik Tahu</h3>
-                <p>Tempat untuk menampilkan makanan dan minuman produksi warga, lengkap dengan nama usaha dan kisah di baliknya.</p>
-              </div>
-            </article>
-            <article class="umkm-card">
-              <span class="umkm-card__number" aria-hidden="true">02</span>
-              <div>
-                <p class="umkm-card__category">Kategori Kuliner</p>
-                <h3>Pabrik Kacang Hai</h3>
-                <p>Ruang bagi karya tangan dan produk kreatif yang kelak dapat diperbarui sesuai pelaku UMKM sebenarnya.</p>
-              </div>
-            </article>
-            <article class="umkm-card">
-              <span class="umkm-card__number" aria-hidden="true">03</span>
-              <div>
-                <p class="umkm-card__category">Kategori Kuliner</p>
-                <h3>Tanaman &amp; Bunga</h3>
-                <p>Contoh kategori untuk usaha tanaman, bunga, atau hasil kebun yang relevan setelah data lapangan tersedia.</p>
-              </div>
-            </article>
+        <div class="umkm__panel" id="umkm-panel-roti" role="tabpanel" aria-labelledby="umkm-tab-roti" tabindex="0" hidden>
+          <div class="umkm__visual umkm__visual--placeholder umkm__visual--roti">
+            <span class="umkm__visual-label">PRODUK LOKAL / 03</span>
+            <strong>Pabrik<br />Roti.</strong>
+            <span class="umkm__visual-status">Foto usaha belum tersedia</span>
+          </div>
+          <div class="umkm__detail">
+            <p class="umkm__detail-kicker">03 / USAHA PANGAN</p>
+            <h3>Pabrik Roti</h3>
+            <p class="umkm__detail-lead">Usaha pembuatan roti melengkapi ragam potensi pangan Kamasi Satu. Informasi mengenai produk, pengelola, dan proses produksinya dapat diisi setelah data terverifikasi.</p>
+            <p class="umkm__detail-note">Foto dan detail usaha masih menunggu data yang dapat dipublikasikan.</p>
           </div>
         </div>
       </section>
 
       <section class="structure container" id="structure" aria-labelledby="structure-title">
-        <!-- TODO: replace all example roles and names with the verified Kamasi 1 organizational structure. -->
+
         <div class="structure__header">
           <div>
-            <h2 class="structure__title" id="structure-title">Orang-orang di balik<br /><span>pelayanan warga.</span></h2>
+            <h2 class="structure__title" id="structure-title">Struktur<span> Organisasi</span></h2>
           </div>
           <div class="structure__header-side">
-            <span class="sample-badge">Susunan contoh · belum resmi</span>
-            <p>Kenali susunan kerja pelayanan Kamasi 1. Jabatan dan nama di bawah hanya contoh tata letak, menunggu struktur resmi yang akan Anda lengkapi.</p>
           </div>
         </div>
 
@@ -212,11 +213,9 @@
           <article class="structure-card structure-card--lead">
             <span class="structure-card__index" aria-hidden="true">01</span>
             <div class="structure-card__body">
-              <p class="structure-card__eyebrow">Pimpinan wilayah · contoh jabatan</p>
-              <h3>Nama Pimpinan</h3>
-              <p>Jabatan resmi akan diisi</p>
+              <p class="structure-card__eyebrow">Kepala Kelurahan</p>
+              <h3>Yanny Tumewu, SE</h3>
             </div>
-            <span class="structure-card__symbol" aria-hidden="true">↗</span>
           </article>
 
           <div class="structure__branches" aria-hidden="true"></div>
@@ -224,29 +223,66 @@
           <div class="structure__team">
             <article class="structure-card">
               <span class="structure-card__index" aria-hidden="true">02</span>
-              <p class="structure-card__eyebrow">Contoh bidang</p>
-              <h3>Sekretariat</h3>
-              <p>Nama dan jabatan belum diisi</p>
+              <p class="structure-card__eyebrow">Sekretariat</p>
+              <h3>Vidi Alfian Assa, SIP</h3>
             </article>
             <article class="structure-card">
               <span class="structure-card__index" aria-hidden="true">03</span>
-              <p class="structure-card__eyebrow">Contoh bidang</p>
-              <h3>Pelayanan Warga</h3>
-              <p>Nama dan jabatan belum diisi</p>
+              <p class="structure-card__eyebrow">STAFF</p>
+              <h3>Sisk Prisilia Pontoh</h3>
             </article>
             <article class="structure-card">
               <span class="structure-card__index" aria-hidden="true">04</span>
-              <p class="structure-card__eyebrow">Contoh bidang</p>
-              <h3>Pemberdayaan</h3>
-              <p>Nama dan jabatan belum diisi</p>
+              <p class="structure-card__eyebrow">Staff</p>
+              <h3>Renaldo Mangundap</h3>
             </article>
           </div>
         </div>
-        <p class="structure__footnote">Diagram ini hanya contoh desain. Sesuaikan jumlah jabatan, hubungan kerja, dan nama berdasarkan dokumen organisasi terbaru sebelum dipublikasikan.</p>
+
+        <div class="structure__neighborhoods" id="neighborhoods" aria-labelledby="neighborhoods-title">
+          <div class="structure__neighborhoods-header">
+            <div>
+              <p class="structure__neighborhoods-kicker">WILAYAH KAMASI SATU</p>
+              <h3 id="neighborhoods-title">Kepala Lingkungan</h3>
+            </div>
+          </div>
+
+          <div class="structure__neighborhoods-grid">
+            <article class="neighborhood-card">
+              <div class="neighborhood-card__heading">
+                <span class="neighborhood-card__number" aria-hidden="true">I</span>
+                <h4>Lingkungan I</h4>
+              </div>
+              <dl class="neighborhood-card__people">
+                <div><dt>Kepala</dt><dd>Ronny Mamuaja</dd></div>
+                <div><dt>Wakil <span></span></dt><dd>Stevie Mait</dd></div>
+              </dl>
+            </article>
+            <article class="neighborhood-card">
+              <div class="neighborhood-card__heading">
+                <span class="neighborhood-card__number" aria-hidden="true">II</span>
+                <h4>Lingkungan II</h4>
+              </div>
+              <dl class="neighborhood-card__people">
+                <div><dt>Kepala</dt><dd>Dwianto Tobin</dd></div>
+                <div><dt>Wakil <span></span></dt><dd>Olvi Wajong</dd></div>
+              </dl>
+            </article>
+            <article class="neighborhood-card">
+              <div class="neighborhood-card__heading">
+                <span class="neighborhood-card__number" aria-hidden="true">III</span>
+                <h4>Lingkungan III</h4>
+              </div>
+              <dl class="neighborhood-card__people">
+                <div><dt>Kepala</dt><dd>Jacob Mawuntu</dd></div>
+                <div><dt>Wakil <span></span></dt><dd>Wildi Ringkuangan</dd></div>
+              </dl>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section class="contact container" id="contact" aria-labelledby="contact-title">
-        <!-- TODO: add verified office address, phone, email, and service hours before enabling contact links. -->
         <div class="contact__header">
           <div>
             <h2 class="contact__title" id="contact-title">Ada yang ingin<br /><span>ditanyakan?</span></h2>

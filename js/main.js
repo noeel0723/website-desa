@@ -1,5 +1,6 @@
 import { initNavbar } from "./navbar.js";
 import { initAnimations } from "./animation.js";
+import { initUmkmTabs } from "./umkm.js";
 
 function initImageFallbacks() {
   const images = [
@@ -21,6 +22,7 @@ function initImageFallbacks() {
 
 initNavbar();
 initAnimations();
+initUmkmTabs();
 initImageFallbacks();
 
 const footerYear = document.getElementById("footer-year");
