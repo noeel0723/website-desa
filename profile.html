@@ -61,12 +61,12 @@
         <h1 class="profile-page__title animate-in" id="profile-page-title">Profil <span>Kamasi I.</span></h1>
         <div class="profile-page__lead animate-in">
           <p>Kamasi Satu adalah kelurahan di Kecamatan Tomohon Tengah, Kota Tomohon, Sulawesi Utara. Halaman ini merangkum identitas wilayah, gambaran penduduk, dan jejak sejarah yang dapat ditelusuri.</p>
-          <p>Informasi kependudukan di bawah masih berupa contoh desain. Catatan sejarah dipisahkan dari data contoh dan dilengkapi tautan ke sumber Pemerintah Kota Tomohon.</p>
+          <p>Ringkasan penduduk dan penggunaan lahan di bawah mengikuti papan profil kelurahan. Rincian yang belum tercantum akan dilengkapi setelah data tersedia.</p>
         </div>
 
         <dl class="profile-page__quick-facts animate-in" aria-label="Identitas singkat Kamasi Satu">
           <div><dt>Kecamatan</dt><dd>Tomohon Tengah</dd></div>
-          <div><dt>Jumlah Penduduk</dt><dd>3.240</dd></div>
+          <div><dt>Jumlah Penduduk</dt><dd>1.066</dd></div>
           <div><dt>Kode Pos</dt><dd>95441</dd></div>
           <div><dt>Lurah</dt><dd>Yanny Tumewu, SE</dd></div>
         </dl>
@@ -88,43 +88,61 @@
       <section class="profile-page__section profile-page__population container" id="population" aria-labelledby="population-title">
         <div class="profile-page__section-heading">
           <div>
-            <p class="profile-page__kicker">02 / DATA PENDUDUK</p>
-            <h2 id="population-title">Statistik<br /><span>Penduduk</span></h2>
+            <p class="profile-page__kicker">02 / STATISTIK WILAYAH</p>
+            <h2 id="population-title">Kamasi I <span>dalam angka.</span></h2>
+            <p class="profile-page__population-intro">Gambaran penduduk dan penggunaan lahan berdasarkan papan profil kelurahan.</p>
           </div>
         </div>
 
+        <!-- Angka mengikuti foto papan profil. TODO: konfirmasi tahun data, satuan luas, dan total luas wilayah. -->
+        <dl class="profile-page__metrics" aria-label="Ringkasan penduduk dan luas lahan Kamasi Satu">
+          <div><dt>Penduduk</dt><dd><strong>1.066</strong><span>jiwa</span></dd></div>
+          <div><dt>Luas permukiman</dt><dd><strong>32</strong><span>ha/m²</span></dd></div>
+          <div><dt>Luas pertanian</dt><dd><strong>33</strong><span>ha/m²</span></dd></div>
+          <div><dt>Kepala keluarga</dt><dd><strong>372</strong><span>KK</span></dd></div>
+        </dl>
 
-        <div class="profile-page__metrics" aria-label="Statistik penduduk contoh">
-          <div><strong>1.016</strong><span>Total penduduk</span></div>
-          <div><strong>361</strong><span>Kepala keluarga</span></div>
-          <div><strong>-</strong><span>Laki-laki</span></div>
-          <div><strong>-</strong><span>Perempuan</span></div>
-        </div>
+        <figure class="profile-page__gender" aria-label="Komposisi penduduk menurut jenis kelamin">
+          <progress class="profile-page__gender-bar" max="1066" value="537" aria-label="Laki-laki 537 jiwa atau 50,4 persen; perempuan 529 jiwa atau 49,6 persen">50,4%</progress>
+          <figcaption class="profile-page__gender-legend">
+            <p class="profile-page__gender-label profile-page__gender-label--male"><span>Laki-laki <strong>537</strong></span><small>50,4%</small></p>
+            <p class="profile-page__gender-label profile-page__gender-label--female"><span>Perempuan <strong>529</strong></span><small>49,6%</small></p>
+          </figcaption>
+        </figure>
 
-        <div class="profile-page__age">
-          <div class="profile-page__age-intro">
+        <div class="profile-page__population-details">
+          <div class="profile-page__stat-group">
+            <h3>Penggunaan lahan</h3>
+            <dl class="profile-page__stat-list">
+              <div><dt>Permukiman</dt><dd>32 ha/m²</dd></div>
+              <div><dt>Pertanian</dt><dd>33 ha/m²</dd></div>
+              <div><dt>Pekarangan</dt><dd>20 ha/m²</dd></div>
+              <div><dt>Pemakaman</dt><dd>6.000 m²</dd></div>
+            </dl>
+            <p class="profile-page__stat-note">Luas perkantoran, sekolah, dan total wilayah belum tercantum.</p>
+          </div>
+          <div class="profile-page__stat-group">
+            <h3>Kepala keluarga</h3>
+            <dl class="profile-page__stat-list">
+              <div><dt>Laki-laki</dt><dd>281 KK</dd></div>
+              <div><dt>Perempuan</dt><dd>91 KK</dd></div>
+              <div><dt>Total</dt><dd>372 KK</dd></div>
+            </dl>
+            <p class="profile-page__stat-note">Rincian berdasarkan jenis kelamin kepala keluarga.</p>
+          </div>
+          <div class="profile-page__stat-group">
             <h3>Kategori usia</h3>
-            <p>Visualisasi data usia penduduk, mengenai distribusi usia di dalam lingkungan Kamasi I.</p>
-          </div>
-          <div class="profile-page__age-list">
-            <div class="profile-page__age-item">
-              <div><span>Balita (0–6 tahun)</span><strong>320 jiwa · 9,9%</strong></div>
-              <progress max="3240" value="320" aria-label="Data contoh balita usia 0 sampai 6 tahun: 320 dari 3.240 jiwa">9,9%</progress>
-            </div>
-            <div class="profile-page__age-item">
-              <div><span>Anak (7–17 tahun)</span><strong>550 jiwa · 17,0%</strong></div>
-              <progress max="3240" value="550" aria-label="Data contoh anak usia 7 sampai 17 tahun: 550 dari 3.240 jiwa">17,0%</progress>
-            </div>
-            <div class="profile-page__age-item">
-              <div><span>Dewasa (18–64 tahun)</span><strong>2.022 jiwa · 62,4%</strong></div>
-              <progress max="3240" value="2022" aria-label="Data contoh dewasa usia 18 sampai 64 tahun: 2.022 dari 3.240 jiwa">62,4%</progress>
-            </div>
-            <div class="profile-page__age-item">
-              <div><span>Lansia (65+ tahun)</span><strong>348 jiwa · 10,7%</strong></div>
-              <progress max="3240" value="348" aria-label="Data contoh lansia usia 65 tahun ke atas: 348 dari 3.240 jiwa">10,7%</progress>
-            </div>
+            <!-- TODO: isi kategori usia dari data yang sesuai dengan total penduduk, bukan angka simulasi lama. -->
+            <dl class="profile-page__stat-list">
+              <div><dt>Balita <small>0–6 tahun</small></dt><dd>—</dd></div>
+              <div><dt>Anak <small>7–17 tahun</small></dt><dd>—</dd></div>
+              <div><dt>Dewasa <small>18–64 tahun</small></dt><dd>—</dd></div>
+              <div><dt>Lansia <small>65+ tahun</small></dt><dd>—</dd></div>
+            </dl>
+            <p class="profile-page__stat-note">Rincian usia belum tersedia pada papan profil.</p>
           </div>
         </div>
+        <p class="profile-page__population-source">Sumber: papan profil kelurahan pada foto. Tahun data belum tercantum; satuan luas mengikuti penulisan pada sumber.</p>
       </section>
 
       <section class="profile-page__section profile-page__history container" id="history" aria-labelledby="history-title">
