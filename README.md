@@ -1,6 +1,6 @@
-# Kamasi 1 — Tomohon
+# Kamasi I — Tomohon
 
-Website statis Kamasi 1 dengan section Home, Profil, Data Penduduk, UMKM, Sejarah, Struktur Organisasi, dan Kontak. Dibangun hanya dengan HTML5, CSS3, dan Vanilla JavaScript. Tidak ada proses build atau dependensi frontend.
+Website statis Kelurahan Kamasi Satu dengan HTML5, CSS3, dan Vanilla JavaScript. Tidak memakai framework, library frontend, atau proses build. Beranda memuat pengantar profil, UMKM, struktur organisasi, dan kontak; halaman `profile.html` memuat profil lengkap, data penduduk, dan sejarah.
 
 ## Menjalankan
 
@@ -10,33 +10,21 @@ Buka `index.html` melalui server lokal statis agar modul JavaScript dapat dimuat
 python -m http.server 8000
 ```
 
-Lalu buka `http://localhost:8000`.
+Lalu buka `http://localhost:8000/` dan `http://localhost:8000/profile.html`.
 
 ## Struktur
 
-- `index.html` — markup halaman dan anchor section berikutnya.
-- `css/variables.css` — warna, radius, tipografi, dan token desain.
-- `css/reset.css`, `style.css`, `components.css`, `responsive.css` — reset, layout, komponen, dan breakpoint.
-- `js/main.js`, `navbar.js`, `animation.js` — inisialisasi, navigasi, dan animasi.
-- `assets/images/hero/kamasi-hero .jpg` — foto yang digunakan pada hero; spasi sebelum `.jpg` dikodekan sebagai `%20` pada URL di `index.html`.
-- `assets/images/profile/kamasi-profile.jpg` — ilustrasi suasana untuk section Profil, bukan foto dokumentasi lokasi.
-- `assets/images/umkm/umkm-illustration.jpg` — ilustrasi produk usaha, bukan dokumentasi UMKM tertentu.
-- `assets/images/history/`, `assets/images/structure/` — disiapkan untuk aset konten berikutnya.
+- `index.html` — beranda dengan pengantar profil, UMKM, struktur, kontak, dan peta.
+- `profile.html` — profil lengkap, data penduduk, serta catatan sejarah.
+- `css/profile-page.css` — layout khusus halaman profil; CSS lain berisi token, komponen, dan breakpoint bersama.
+- `js/` — navigasi mobile, status navbar, animasi halus, dan fallback gambar.
+- `assets/images/profile/kamasi1.jpg` — foto profil dalam format JPEG.
+- `assets/images/hero/kamasi-hero .jpg` — foto hero; spasi sebelum `.jpg` dikodekan sebagai `%20` pada URL HTML.
 
 ## Sebelum publikasi
 
-Ganti angka `X.XXX+`, `XXX+`, `XX+`, dan `XX` dengan data Kamasi 1 yang terverifikasi. Bila tersedia foto lokasi asli dengan izin penggunaan, ganti gambar hero dan perbarui teks alternatif serta label ilustrasinya.
-
-Section Profil di `index.html` memakai narasi dan dua angka contoh (`± 1,8 km²`, `4 lingkungan`). Cari komentar `TODO` di section tersebut untuk mengganti teks, data, gambar, teks alternatif, dan label ilustrasi dengan informasi resmi.
-
-Section Data Penduduk juga memakai data simulasi, bukan data resmi: total 3.240 jiwa, laki-laki 1.598, perempuan 1.642, kepala keluarga 920, dan kelompok usia 702 + 2.190 + 348 jiwa. Saat menggantinya, perbarui angka yang terlihat, persentase, serta atribut `value` dan `max` pada tiga elemen `<progress>` agar grafik tetap sesuai.
-
-Section UMKM menampilkan tiga kategori contoh dan satu gambar ilustratif. Ganti dengan kategori, nama usaha, deskripsi, dan foto nyata setelah mendapat izin publikasi. Perbarui juga `alt` dan keterangan gambar.
-
-Section Sejarah adalah kerangka kronologi contoh, bukan riwayat resmi. Isi periode, tanggal, peristiwa, dan sumber yang dapat diverifikasi sebelum dipublikasikan sebagai informasi wilayah.
-
-Section Struktur Organisasi memakai jabatan, nama, dan hubungan kerja contoh. Ganti seluruhnya sesuai dokumen organisasi terbaru. Menu “Struktur” mengarah ke section ini dan menggantikan Galeri.
-
-Section Kontak belum memiliki nomor, email, alamat kantor lengkap, atau jam layanan resmi. Isilah data terverifikasi sebelum menambahkan tautan `tel:` dan `mailto:`. Sematan Google Maps memakai pencarian kawasan “Kamasi Satu, Tomohon Tengah, Kota Tomohon” dan memerlukan internet; ini **bukan** penanda titik kantor. Jika ingin menunjuk alamat kantor tertentu, ganti URL `iframe` dan tautan “Buka di Google Maps” setelah lokasi pastinya diverifikasi.
-
-Footer berisi navigasi situs, identitas wilayah, tautan ke situs Pemerintah Kota Tomohon, dan catatan bahwa data contoh belum boleh dianggap rujukan resmi. Tahun hak cipta diisi otomatis lewat `js/main.js`.
+- Angka penduduk pada beranda dan halaman profil **masih simulasi**: 3.240 penduduk, 920 kepala keluarga, 1.598 laki-laki, 1.642 perempuan, dan kelompok usia 702 / 2.190 / 348 jiwa. Ganti angka, persentase, `value`, `max`, serta `aria-label` pada `<progress>` secara bersamaan setelah data resmi tersedia.
+- Angka UMKM, fasilitas, luas wilayah, dan jumlah lingkungan di beranda masih contoh. Kode pos `95441` dan nama lurah `Yanny Tumewu, SE` berasal dari data yang diberikan untuk proyek; nama lurah juga tercantum pada [situs Pemerintah Kota Tomohon](https://tomohon.go.id/kecamatan-tomohon-tengah/) saat halaman ini dibuat. Periksa ulang sebelum publikasi karena jabatan dapat berubah.
+- Catatan sejarah pada `profile.html` merujuk [RPJMD Kota Tomohon 2021–2026](https://tomohon.go.id/wp-content/uploads/2023/05/RPJMD-KOTA-TOMOHON-TAHUN-2021-2026.pdf) untuk catatan kawasan Kamasi tahun 1855, serta [berita Pemerintah Kota Tomohon](https://tomohon.go.id/ibadah-syukur-hut-kelurahan-kamasi-satu-ke-10/) untuk peringatan HUT ke-10 tahun 2018. Catatan kawasan Kamasi bukan otomatis tanggal pembentukan Kelurahan Kamasi Satu. Lengkapi riwayat dengan arsip kelurahan dan narasumber warga.
+- UMKM dan struktur organisasi masih mengandung konten contoh. Perbarui nama, jabatan, deskripsi, foto, dan izin publikasi sebelum ditampilkan sebagai informasi resmi.
+- Sematan Google Maps mencari kawasan Kamasi Satu, bukan menandai titik kantor kelurahan. Ganti URL sematan setelah koordinat kantor dipastikan.

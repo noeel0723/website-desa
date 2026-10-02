@@ -1,7 +1,7 @@
 export function initAnimations() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
 
-  const targets = document.querySelectorAll(".stats__card, .profile__header, .profile__image-wrap, .profile__summary, .population__header, .population__total, .population__stat-card, .population__age-panel, .umkm__header, .umkm__visual, .umkm-card, .history__header, .history__aside, .history__timeline-wrap, .structure__header, .structure-card, .contact__header, .contact__feature, .contact-card");
+  const targets = document.querySelectorAll(".stats__card, .profile__header, .profile__image-wrap, .profile__summary, .umkm__header, .umkm__visual, .umkm-card, .structure__header, .structure-card, .contact__header, .contact__feature, .contact-card, .profile-page__overview, .profile-page__section, .profile-page__next");
   if (!targets.length) return;
 
   document.documentElement.classList.add("reveal-ready");

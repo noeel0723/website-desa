@@ -189,6 +189,18 @@
   line-height: 1.25;
 }
 
+.profile__more {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.profile__more:hover { text-decoration: underline; text-underline-offset: 4px; }
+
 .population__total {
   position: relative;
   display: flex;

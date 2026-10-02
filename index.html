@@ -31,14 +31,12 @@
         <div class="navbar__desktop">
           <ul class="navbar__menu">
             <li><a class="navbar__link" href="#home" aria-current="page">Home</a></li>
-            <li><a class="navbar__link" href="#profile">Profil</a></li>
-            <li><a class="navbar__link" href="#population">Data Penduduk</a></li>
+            <li><a class="navbar__link" href="profile.html">Profil</a></li>
             <li><a class="navbar__link" href="#umkm">UMKM</a></li>
-            <li><a class="navbar__link" href="#history">Sejarah</a></li>
             <li><a class="navbar__link" href="#structure" aria-label="Struktur Organisasi">Struktur</a></li>
             <li><a class="navbar__link" href="#contact">Kontak</a></li>
           </ul>
-          <a class="navbar__cta" href="#profile">Jelajahi Kami <span aria-hidden="true">↗</span></a>
+          <a class="navbar__cta" href="profile.html">Jelajahi Kami <span aria-hidden="true">↗</span></a>
         </div>
 
         <button
@@ -54,10 +52,8 @@
         <div class="navbar__mobile" id="mobile-menu" inert>
           <ul class="navbar__mobile-list">
             <li><a href="#home" aria-current="page">Home</a></li>
-            <li><a href="#profile">Profil</a></li>
-            <li><a href="#population">Data Penduduk</a></li>
+            <li><a href="profile.html">Profil</a></li>
             <li><a href="#umkm">UMKM</a></li>
-            <li><a href="#history">Sejarah</a></li>
             <li><a href="#structure" aria-label="Struktur Organisasi">Struktur</a></li>
             <li><a href="#contact">Kontak</a></li>
           </ul>
@@ -77,7 +73,7 @@
             </p>
             <div class="hero__actions animate-in">
               <a class="button button--primary" href="#profile">Jelajahi Kamasi I <span aria-hidden="true"></span></a>
-              <a class="button button--text" href="#profile">Kenali Kami <span aria-hidden="true"></span></a>
+              <a class="button button--text" href="profile.html">Kenali Kami <span aria-hidden="true"></span></a>
             </div>
           </div>
         </div>
@@ -96,9 +92,9 @@
         </div>
 
         <!-- TODO: replace with verified Kamasi 1 data -->
-        <div class="stats animate-in" aria-label="Statistik Kamasi 1, data sementara belum tersedia">
-          <div class="stats__card"><strong class="stats__number">1.500+</strong><span class="stats__label">Penduduk</span></div>
-          <div class="stats__card"><strong class="stats__number">465+</strong><span class="stats__label">Kepala Keluarga</span></div>
+        <div class="stats animate-in" aria-label="Statistik contoh Kamasi 1, belum terverifikasi">
+          <div class="stats__card"><strong class="stats__number">3.240</strong><span class="stats__label">Penduduk</span></div>
+          <div class="stats__card"><strong class="stats__number">920</strong><span class="stats__label">Kepala Keluarga</span></div>
           <div class="stats__card"><strong class="stats__number">15+</strong><span class="stats__label">UMKM Lokal</span></div>
           <div class="stats__card"><strong class="stats__number">10+</strong><span class="stats__label">Fasilitas Umum</span></div>
         </div>
@@ -107,7 +103,7 @@
       <section class="profile container" id="profile" aria-labelledby="profile-title">
         <div class="profile__header">
           <div>
-            <h2 class="profile__title" id="profile-title">Mengenal wilayah<br /><span>Kamasi I.</span></h2>
+            <h2 class="profile__title" id="profile-title">Mengenal<span> Kamasi I.</span></h2>
           </div>
         </div>
 
@@ -116,8 +112,9 @@
             <img
               class="profile__image"
               src="assets/images/profile/kamasi1.jpg"
-              width="1536"
-              height="1024"
+              alt="Pemandangan pegunungan dan kawasan hijau di sekitar Tomohon"
+              width="4032"
+              height="3024"
               loading="lazy"
               decoding="async"
             />
@@ -141,73 +138,10 @@
               <div class="profile__fact"><dt>Luas wilayah</dt><dd>± 1,8 km²</dd></div>
               <div class="profile__fact"><dt>Lingkungan</dt><dd>3 Lingkungan</dd></div>
             </dl>
+            <a class="profile__more" href="profile.html">Baca profil lengkap <span aria-hidden="true">↗</span></a>
           </div>
         </div>
 
-      </section>
-      <section class="population container" id="population" aria-labelledby="population-title">
-
-        <div class="population__header">
-          <div>
-            <h2 class="population__title" id="population-title">Statistik Penduduk<br /><span>Kamasi I</span></h2>
-          </div>
-          <div class="population__header-side">
-          </div>
-        </div>
-
-        <div class="population__overview">
-          <div class="population__total">
-            <div class="population__total-top">
-              <span>Jumlah Penduduk</span>
-            </div>
-            <div>
-              <strong>3.240<span>jiwa</span></strong>
-              <p>Total Keseluruhan Penduduk</p>
-            </div>
-          </div>
-
-          <div class="population__summary-cards">
-            <div class="population__stat-card">
-              <span class="population__stat-icon" aria-hidden="true">01</span>
-              <div><strong>1.598</strong><span>Laki-laki</span></div>
-            </div>
-            <div class="population__stat-card">
-              <span class="population__stat-icon" aria-hidden="true">02</span>
-              <div><strong>1.642</strong><span>Perempuan</span></div>
-            </div>
-            <div class="population__stat-card population__stat-card--wide">
-              <span class="population__stat-icon" aria-hidden="true">03</span>
-              <div><strong>920</strong><span>Kepala Keluarga</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="population__age-panel">
-          <div class="population__age-heading">
-            <div>
-              <p class="population__age-kicker">Sebaran penduduk</p>
-              <h3>Komposisi usia</h3>
-            </div>
-          </div>
-          <div class="population__age-list">
-            <div class="population__age-item">
-              <div class="population__age-meta"><span>0–14 tahun</span><strong>702 jiwa</strong></div>
-              <progress max="3240" value="702" aria-label="Usia 0 sampai 14 tahun: 702 dari 3.240 jiwa">21,7%</progress>
-              <span class="population__age-percent">21,7%</span>
-            </div>
-            <div class="population__age-item">
-              <div class="population__age-meta"><span>15–64 tahun</span><strong>2.190 jiwa</strong></div>
-              <progress max="3240" value="2190" aria-label="Usia 15 sampai 64 tahun: 2.190 dari 3.240 jiwa">67,6%</progress>
-              <span class="population__age-percent">67,6%</span>
-            </div>
-            <div class="population__age-item">
-              <div class="population__age-meta"><span>65 tahun ke atas</span><strong>348 jiwa</strong></div>
-              <progress max="3240" value="348" aria-label="Usia 65 tahun ke atas: 348 dari 3.240 jiwa">10,7%</progress>
-              <span class="population__age-percent">10,7%</span>
-            </div>
-          </div>
-          <p class="population__note">Data simulasi untuk kebutuhan desain. Perbarui angka, persentase, dan nilai grafik setelah data resmi tersedia.</p>
-        </div>
       </section>
       <section class="umkm container" id="umkm" aria-labelledby="umkm-title">
         <!-- TODO: replace all sample UMKM categories, descriptions, and illustration with verified Kamasi 1 businesses. -->
@@ -262,56 +196,6 @@
         </div>
       </section>
 
-      <section class="history container" id="history" aria-labelledby="history-title">
-        <!-- TODO: replace this example timeline with sourced Kamasi 1 history, verified dates, and references. -->
-        <div class="history__header">
-          <div>
-            <h2 class="history__title" id="history-title">History Of <br><span>Kamasi I.</span></h2>
-          </div>
-          <div class="history__header-side">
-          </div>
-        </div>
-
-        <div class="history__grid">
-          <div class="history__aside">
-            <p class="history__aside-kicker">Catatan wilayah / Kamasi 1</p>
-            <div>
-              <h3>Ruang untuk<br />mengingat.</h3>
-              <p>Sejarah yang baik tumbuh dari cerita warga, arsip, dan catatan yang bisa ditelusuri. Bagian ini siap menampungnya ketika data asli telah tersedia.</p>
-            </div>
-            <span class="history__aside-footer">Tomohon, Sulawesi Utara <span aria-hidden="true">↗</span></span>
-          </div>
-
-          <div class="history__timeline-wrap">
-            <ol class="history__timeline">
-              <li class="history__item">
-                <span class="history__item-number" aria-hidden="true">01</span>
-                <div>
-                  <p class="history__period">Periode awal · tahun belum diisi</p>
-                  <h3>Jejak awal permukiman</h3>
-                  <p>Kisah awal Kamasi 1 dapat ditelusuri melalui ingatan warga dan dokumen setempat. Narasi contoh ini menunggu sumber yang dapat diverifikasi.</p>
-                </div>
-              </li>
-              <li class="history__item">
-                <span class="history__item-number" aria-hidden="true">02</span>
-                <div>
-                  <p class="history__period">Perkembangan · tahun belum diisi</p>
-                  <h3>Perubahan dari masa ke masa</h3>
-                  <p>Lingkungan tempat tinggal dan aktivitas warga berubah seiring waktu. Ruang ini disiapkan untuk mencatat peristiwa penting secara berurutan.</p>
-                </div>
-              </li>
-              <li class="history__item">
-                <span class="history__item-number" aria-hidden="true">03</span>
-                <div>
-                  <p class="history__period">Masa kini · tahun belum diisi</p>
-                  <h3>Cerita yang terus berlanjut</h3>
-                  <p>Catatan masa kini akan menghubungkan ingatan lama dengan kehidupan warga sekarang dan menjadi bekal untuk generasi berikutnya.</p>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </section>
       <section class="structure container" id="structure" aria-labelledby="structure-title">
         <!-- TODO: replace all example roles and names with the verified Kamasi 1 organizational structure. -->
         <div class="structure__header">
@@ -447,10 +331,10 @@
           <h2>Jelajahi</h2>
           <ul>
             <li><a href="#home">Beranda</a></li>
-            <li><a href="#profile">Profil</a></li>
-            <li><a href="#population">Data Penduduk</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="profile.html#population">Data Penduduk</a></li>
             <li><a href="#umkm">UMKM</a></li>
-            <li><a href="#history">Sejarah</a></li>
+            <li><a href="profile.html#history">Sejarah</a></li>
           </ul>
         </nav>
 
