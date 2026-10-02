@@ -628,7 +628,7 @@ main {
 
 .site-footer__about { max-width: 300px; }
 .site-footer__brand { display: inline-flex; align-items: center; gap: 11px; font-size: 21px; font-weight: 600; letter-spacing: -0.04em; }
-.site-footer__brand img { width: 42px; height: 42px; border: 1px solid rgb(255 255 255 / 15%); border-radius: 14px; }
+.site-footer__brand img { width: 56px; height: 56px; flex: none; border-radius: 50%; object-fit: contain; }
 .site-footer__brand strong { color: var(--accent); font-weight: 600; }
 .site-footer__about > p { margin-top: 24px; color: #d1ddcf; font-size: 13px; line-height: 1.7; }
 .site-footer__identity { display: inline-block; margin-top: 25px; color: var(--accent); font-size: 11px; letter-spacing: 0.04em; }

@@ -146,7 +146,7 @@
 
 @media (max-width: 767px) {
   .hero { display: flex; min-height: 0; flex-direction: column; border-radius: 24px; }
-  .hero__content { display: block; padding: 132px 24px 35px; }
+  .hero__content { display: block; padding: 102px 24px 35px; }
   .hero__eyebrow { font-size: 10px; }
   .hero__title { width: auto; max-width: none; margin-top: 24px; font-size: clamp(42px, 7vw, 54px); }
   .hero__description { max-width: 540px; margin-top: 22px; font-size: 15px; line-height: 1.7; }
@@ -222,7 +222,7 @@
 }
 
 @media (max-width: 480px) {
-  .hero__content { padding: 126px 20px 29px; }
+  .hero__content { padding: 96px 20px 29px; }
   .hero__title { font-size: clamp(40px, 10.9vw, 48px); letter-spacing: -0.075em; }
   .hero__description { font-size: 14px; }
   .hero__actions { gap: 4px; }

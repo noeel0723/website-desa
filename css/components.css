@@ -36,7 +36,7 @@
 }
 
 .navbar__brand-name span { color: var(--primary); }
-.navbar__logo { width: 32px; height: 32px; }
+.navbar__logo { width: 44px; height: 44px; flex: none; border-radius: 50%; object-fit: contain; }
 
 .navbar__desktop,
 .navbar__menu {
