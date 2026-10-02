@@ -14,7 +14,7 @@ Lalu buka `http://localhost:8000/` dan `http://localhost:8000/profile.html`.
 
 ## Struktur
 
-- `index.html` — beranda dengan pengantar profil, pilihan UMKM, struktur, kontak, dan peta.
+- `index.html` — beranda dengan pengantar profil, pilihan UMKM, struktur, kontak, peta, dan aspirasi warga.
 - `profile.html` — profil lengkap, data penduduk, catatan sejarah, dan daftar lurah yang terdokumentasi.
 - `css/profile-page.css` — layout khusus halaman profil; CSS lain berisi token, komponen, dan breakpoint bersama.
 - `js/` — navigasi mobile, status navbar, tab UMKM, animasi halus, dan fallback gambar.
@@ -33,6 +33,12 @@ Lalu buka `http://localhost:8000/` dan `http://localhost:8000/profile.html`.
 - Daftar lurah menampilkan nama yang dapat ditemukan dalam sumber BPS dan Pemerintah Kota Tomohon. Tahun “tercatat” bukan rentang masa jabatan; lengkapi tanggal mulai–akhir jabatan dan lurah lain menggunakan arsip/SK kelurahan sebelum menganggap daftar ini lengkap. Inisial pada kartu hanya placeholder visual, bukan foto resmi.
 - Tab UMKM sudah menampilkan foto Pabrik Tahu, Kacang Hai, dan Pabrik Roti. Detail pengelola, alamat, serta ragam produk masih perlu diverifikasi. Struktur organisasi masih mengandung konten contoh. Kartu Lingkungan I–III memakai placeholder untuk nama kepala dan wakil; pastikan keberadaan jabatan wakil dari struktur resmi sebelum mengisinya. Perbarui nama, jabatan, deskripsi, foto, dan izin publikasi sebelum ditampilkan sebagai informasi resmi.
 - Sematan Google Maps mencari kawasan Kamasi Satu, bukan menandai titik kantor kelurahan. Ganti URL sematan setelah koordinat kantor dipastikan.
+
+## Aspirasi warga
+
+Section `#aspiration` berada setelah Kontak. Tautan navbar dan footer di kedua halaman mengarah ke section ini. Tombol WhatsApp membuka `https://wa.me/6285396323894` dengan format pesan yang sudah diisi; pesan baru terkirim setelah warga melengkapi isi dan menekan Kirim di WhatsApp. Nomor tampilan **+62 853-9632-3894** berasal dari nomor yang diberikan untuk proyek ini. Tautan juga berfungsi jika JavaScript dimatikan.
+
+Jika format pesan atau nomor diubah, sesuaikan teks pratinjau `.aspiration__message`, URL tombol `.aspiration__button`, nomor tampilan, dan `aria-label` bersama-sama. Nomor pada URL `wa.me` memakai kode negara tanpa tanda `+`, spasi, atau tanda hubung; parameter `text` menggunakan URL encoding.
 
 ## Transkripsi kelompok umur
 

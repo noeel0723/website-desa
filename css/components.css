@@ -545,6 +545,17 @@
 
 .contact__map-link:hover { background: #e1ebdc; transform: translateY(-2px); }
 
+.aspiration__step { position: relative; display: flex; align-items: flex-start; gap: 14px; }
+.aspiration__step:not(:last-child)::after { position: absolute; top: 40px; bottom: -24px; left: 19px; border-left: 1px solid #c5d4bc; content: ""; }
+.aspiration__step-number { display: grid; width: 40px; height: 40px; flex: none; place-items: center; border: 1px solid #d6e1ce; border-radius: 50%; background: var(--surface); color: var(--primary); font-size: 11px; font-weight: 700; }
+.aspiration__step h3 { margin-top: 3px; font-size: 16px; font-weight: 600; letter-spacing: -0.025em; }
+.aspiration__step p { max-width: 330px; margin-top: 7px; color: var(--text-secondary); font-size: 12px; line-height: 1.7; }
+.aspiration__report { min-width: 0; border: 1px solid rgb(255 255 255 / 80%); border-radius: var(--radius-large); background: var(--surface); padding: clamp(24px, 2.7vw, 36px); }
+.aspiration__report > h3 { font-size: 26px; font-weight: 550; letter-spacing: -0.045em; }
+.aspiration__report-description { margin-top: 12px; color: var(--text-secondary); font-size: 13px; line-height: 1.65; }
+.aspiration__message { margin: 20px 0 0; border: 1px solid #e4ebdc; border-radius: var(--radius-medium); background: #f1f5eb; padding: 20px; color: var(--text-primary); font-family: var(--font-sans); font-size: 12px; line-height: 1.85; white-space: pre-wrap; overflow-wrap: anywhere; }
+.aspiration__button { width: 100%; min-height: 48px; padding-block: 12px; text-align: center; }
+
 @media (prefers-reduced-motion: reduce) {
   .site-header,
   .navbar__cta,

@@ -38,6 +38,7 @@
             <li><a class="navbar__link" href="#umkm">UMKM</a></li>
             <li><a class="navbar__link" href="#structure" aria-label="Struktur Organisasi">Struktur</a></li>
             <li><a class="navbar__link" href="#contact">Kontak</a></li>
+            <li><a class="navbar__link" href="#aspiration">Aspirasi</a></li>
           </ul>
           <a class="navbar__cta" href="profile.html">Jelajahi Kami <span aria-hidden="true">↗</span></a>
         </div>
@@ -59,6 +60,7 @@
             <li><a href="#umkm">UMKM</a></li>
             <li><a href="#structure" aria-label="Struktur Organisasi">Struktur</a></li>
             <li><a href="#contact">Kontak</a></li>
+            <li><a href="#aspiration">Aspirasi</a></li>
           </ul>
         </div>
       </nav>
@@ -94,10 +96,10 @@
 
         </div>
 
-        <!-- Penduduk dan KK mengikuti foto papan profil. TODO: verifikasi jumlah UMKM dan fasilitas umum. -->
-        <div class="stats animate-in" aria-label="Ringkasan Kamasi Satu; angka UMKM dan fasilitas masih contoh">
-          <div class="stats__card"><strong class="stats__number">1.066</strong><span class="stats__label">Penduduk</span></div>
-          <div class="stats__card"><strong class="stats__number">372</strong><span class="stats__label">Kepala Keluarga</span></div>
+        <!-- TODO: replace with verified Kamasi 1 data -->
+        <div class="stats animate-in" aria-label="Statistik contoh Kamasi 1, belum terverifikasi">
+          <div class="stats__card"><strong class="stats__number">1.016</strong><span class="stats__label">Penduduk</span></div>
+          <div class="stats__card"><strong class="stats__number"></strong><span class="stats__label">Kepala Keluarga</span></div>
           <div class="stats__card"><strong class="stats__number">15+</strong><span class="stats__label">UMKM Lokal</span></div>
           <div class="stats__card"><strong class="stats__number">10+</strong><span class="stats__label">Fasilitas Umum</span></div>
         </div>
@@ -287,14 +289,6 @@
           </div>
         </div>
 
-        <div class="contact__grid">
-          <div class="contact__feature">
-            <p class="contact__feature-kicker">Kamasi Satu / Tomohon Tengah</p>
-            <div>
-              <h3>Mari terhubung<br />dengan kami.</h3>
-            </div>
-            <p class="contact__feature-location">Tomohon Tengah, Sulawesi Utara <span aria-hidden="true">↗</span></p>
-          </div>
 
           <div class="contact__details">
             <div class="contact-card">
@@ -320,13 +314,12 @@
               </div>
             </div>
           </div>
-        </div>
         <div class="contact__map" id="contact-map">
           <div class="contact__map-heading">
             <div>
               <p class="contact__map-kicker">Peta wilayah</p>
               <h3>Temukan Kamasi Satu.</h3>
-              <p>Peta ini menampilkan kawasan Kelurahan Kamasi Satu, bukan penanda alamat kantor kelurahan.</p>
+              <p>Peta ini menampilkan kawasan Kelurahan Kamasi Satu.</p>
             </div>
             <a
               class="contact__map-link"
@@ -345,6 +338,43 @@
             ></iframe>
           </div>
         </div>
+      </section>
+
+      <section class="aspiration container" id="aspiration" aria-labelledby="aspiration-title">
+        <div class="aspiration__intro">
+          <p class="section-eyebrow"><span class="section-eyebrow__dot" aria-hidden="true"></span>ASPIRASI WARGA</p>
+          <h2 class="aspiration__title" id="aspiration-title">Sampaikan aspirasi<br /><span>lewat WhatsApp.</span></h2>
+          <p class="aspiration__description">Bagikan saran, masukan, atau kondisi fasilitas dan lingkungan di Kamasi Satu langsung melalui WhatsApp.</p>
+          <ol class="aspiration__steps">
+            <li class="aspiration__step">
+              <span class="aspiration__step-number" aria-hidden="true">01</span>
+              <div><h3>Buka WhatsApp</h3><p>Tekan tombol WhatsApp untuk membuka chat dengan format pesan yang sudah disiapkan.</p></div>
+            </li>
+            <li class="aspiration__step">
+              <span class="aspiration__step-number" aria-hidden="true">02</span>
+              <div><h3>Lengkapi lalu kirim</h3><p>Isi nama, lingkungan, lokasi, dan aspirasi Anda. Tambahkan foto jika diperlukan.</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <article class="aspiration__report" aria-labelledby="aspiration-report-title">
+          <h3 id="aspiration-report-title">Format pesan</h3>
+          <p class="aspiration__report-description">Lengkapi format berikut di WhatsApp agar aspirasi mudah dipahami.</p>
+          <pre class="aspiration__message" aria-label="Contoh format pesan aspirasi">Halo, saya ingin menyampaikan aspirasi untuk Kelurahan Kamasi Satu.
+
+Nama:
+Lingkungan (I/II/III):
+Kategori (saran/jalan/sampah/drainase/lampu jalan/lainnya):
+Lokasi:
+Aspirasi atau kondisi yang dilaporkan:</pre>
+          <ul class="aspiration__tips">
+            <li>Tulis lokasi dengan jelas, misalnya patokan terdekat.</li>
+            <li>Lampirkan foto kondisi di lapangan bila ada.</li>
+          </ul>
+          <a class="button button--primary aspiration__button" href="https://wa.me/6285396323894?text=Halo%2C%20saya%20ingin%20menyampaikan%20aspirasi%20untuk%20Kelurahan%20Kamasi%20Satu.%0A%0ANama%3A%0ALingkungan%20(I%2FII%2FIII)%3A%0AKategori%20(saran%2Fjalan%2Fsampah%2Fdrainase%2Flampu%20jalan%2Flainnya)%3A%0ALokasi%3A%0AAspirasi%20atau%20kondisi%20yang%20dilaporkan%3A" target="_blank" rel="noopener noreferrer" aria-label="Sampaikan aspirasi lewat WhatsApp ke +62 853-9632-3894, buka tab baru">Sampaikan lewat WhatsApp <span aria-hidden="true">↗</span></a>
+          <p class="aspiration__destination"><span>Nomor WhatsApp</span><strong>+62 853-9632-3894</strong></p>
+          <p class="aspiration__hint">Pesan belum terkirim otomatis. Periksa isinya, lalu tekan Kirim di WhatsApp.</p>
+        </article>
       </section>
     </main>
     <footer class="site-footer container">
@@ -374,6 +404,7 @@
           <ul>
             <li><a href="#structure">Struktur Organisasi</a></li>
             <li><a href="#contact">Kontak</a></li>
+            <li><a href="#aspiration">Aspirasi Warga</a></li>
             <li><a href="#contact-map">Peta Lokasi</a></li>
             <li><a href="https://tomohon.go.id/" target="_blank" rel="noopener noreferrer">Pemerintah Kota Tomohon <span aria-hidden="true">↗</span></a></li>
           </ul>
