@@ -168,6 +168,11 @@
 .profile-page__stat-list dt { min-width: 0; color: var(--text-secondary); font-size: 12px; line-height: 1.5; }
 .profile-page__stat-list dt small { display: block; font-size: 10px; }
 .profile-page__stat-list dd { margin: 0; color: var(--primary); font-size: 13px; font-weight: 650; white-space: nowrap; }
+.profile-page__age-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.profile-page__estimate-label { border: 1px solid var(--border); border-radius: 100px; background: #edf2e9; padding: 4px 8px; color: var(--primary); font-size: 10px; font-weight: 600; letter-spacing: 0; }
+.profile-page__age-estimates dd { text-align: right; }
+.profile-page__age-estimates dd strong { font-size: 15px; font-weight: 650; }
+.profile-page__age-estimates dd small { display: block; margin-top: 2px; color: var(--text-secondary); font-size: 10px; font-weight: 400; }
 .profile-page__stat-note { margin-top: 14px; color: var(--text-secondary); font-size: 11px; line-height: 1.6; }
 .profile-page__population-source { margin-top: 26px; border-top: 1px solid var(--border); padding-top: 14px; color: var(--text-secondary); font-size: 11px; line-height: 1.65; }
 

@@ -124,25 +124,25 @@
           <div class="profile-page__stat-group">
             <h3>Kepala keluarga</h3>
             <dl class="profile-page__stat-list">
-              <div><dt>Laki-laki</dt><dd>281 KK</dd></div>
-              <div><dt>Perempuan</dt><dd>91 KK</dd></div>
-              <div><dt>Total</dt><dd>372 KK</dd></div>
+              <div><dt>Laki-laki</dt><dd>281</dd></div>
+              <div><dt>Perempuan</dt><dd>91</dd></div>
+              <div><dt>Total</dt><dd>372</dd></div>
             </dl>
             <p class="profile-page__stat-note">Rincian berdasarkan jenis kelamin kepala keluarga.</p>
           </div>
           <div class="profile-page__stat-group">
-            <h3>Kategori usia</h3>
-            <!-- TODO: isi kategori usia dari data yang sesuai dengan total penduduk, bukan angka simulasi lama. -->
-            <dl class="profile-page__stat-list">
-              <div><dt>Balita <small>0–6 tahun</small></dt><dd>—</dd></div>
-              <div><dt>Anak <small>7–17 tahun</small></dt><dd>—</dd></div>
-              <div><dt>Dewasa <small>18–64 tahun</small></dt><dd>—</dd></div>
-              <div><dt>Lansia <small>65+ tahun</small></dt><dd>—</dd></div>
+            <h3 class="profile-page__age-heading">Kategori usia <span class="profile-page__estimate-label">Estimasi</span></h3>
+
+            <!-- Estimasi proporsional dari 1.065 jiwa yang terisi pada tabel umur; metode dan pembulatan ada di README.md. -->
+            <dl class="profile-page__stat-list profile-page__age-estimates" aria-label="Estimasi kategori usia berdasarkan 1.065 jiwa yang tercatat pada tabel umur">
+              <div><dt>Balita <small>0–6 tahun</small></dt><dd><strong>≈73</strong><small>jiwa · 6,9%</small></dd></div>
+              <div><dt>Anak <small>7–17 tahun</small></dt><dd><strong>≈165</strong><small>jiwa · 15,5%</small></dd></div>
+              <div><dt>Dewasa <small>18–64 tahun</small></dt><dd><strong>≈703</strong><small>jiwa · 66,0%</small></dd></div>
+              <div><dt>Lansia <small>65+ tahun</small></dt><dd><strong>≈124</strong><small>jiwa · 11,6%</small></dd></div>
             </dl>
-            <p class="profile-page__stat-note">Rincian usia belum tersedia pada papan profil.</p>
+            <p class="profile-page__stat-note">Perkiraan proporsional dari 1.065 jiwa pada tabel umur, berbeda dari total penduduk 1.066. Kolom kosong belum terhitung.</p>
           </div>
         </div>
-        <p class="profile-page__population-source">Sumber: papan profil kelurahan pada foto. Tahun data belum tercantum; satuan luas mengikuti penulisan pada sumber.</p>
       </section>
 
       <section class="profile-page__section profile-page__history container" id="history" aria-labelledby="history-title">
