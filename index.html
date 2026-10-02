@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <script type="module" src="js/main.js"></script>
+    <script defer src="js/navbar.js"></script>
+    <script defer src="js/animation.js"></script>
+    <script defer src="js/umkm.js"></script>
+    <script defer src="js/main.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
@@ -144,9 +147,8 @@
 
       </section>
       <section class="umkm container" id="umkm" aria-labelledby="umkm-title">
-        <!-- TODO: complete each business profile with verified owner, address, products, and permitted photos. -->
+
         <div class="umkm__header">
-          <p class="umkm__eyebrow">USAHA LOKAL / KAMASI SATU</p>
           <h2 class="umkm__title" id="umkm-title">Potensi UMKM<br /><span>Kamasi Satu.</span></h2>
           <p class="umkm__intro">Kenali usaha pangan yang menjadi bagian dari potensi lokal Kamasi Satu. Pilih salah satu untuk melihat ringkasan dan dokumentasinya.</p>
         </div>
@@ -171,30 +173,28 @@
         </div>
 
         <div class="umkm__panel" id="umkm-panel-kacang" role="tabpanel" aria-labelledby="umkm-tab-kacang" tabindex="0" hidden>
-          <div class="umkm__visual umkm__visual--placeholder umkm__visual--kacang">
-            <span class="umkm__visual-label">PRODUK LOKAL / 02</span>
-            <strong>Kacang<br />Hai.</strong>
-            <span class="umkm__visual-status">Foto usaha belum tersedia</span>
-          </div>
+          <figure class="umkm__visual">
+            <img class="umkm__image" src="assets/images/umkm/kacang-hai.jpg" alt="Camilan Kacang Hai berbentuk bulat dalam beberapa kemasan bening" width="1200" height="1600" loading="lazy" decoding="async" />
+            <figcaption class="umkm__image-caption">Produk Kacang Hai</figcaption>
+          </figure>
           <div class="umkm__detail">
             <p class="umkm__detail-kicker">02 / USAHA PANGAN</p>
             <h3>Kacang Hai</h3>
-            <p class="umkm__detail-lead">Kacang Hai ditampilkan sebagai salah satu potensi olahan pangan lokal. Cerita usaha, ragam produk, dan dokumentasi dapat ditambahkan setelah informasi dari pengelola tersedia.</p>
-            <p class="umkm__detail-note">Foto dan detail usaha masih menunggu data yang dapat dipublikasikan.</p>
+            <p class="umkm__detail-lead">Kacang Hai memperkaya pilihan camilan lokal Kamasi Satu. Dalam foto, produk berbentuk bulat ini telah dikemas dalam beberapa kantong bening.</p>
+            <p class="umkm__detail-note">Informasi pengelola, varian produk, dan alamat usaha dapat ditambahkan setelah terverifikasi.</p>
           </div>
         </div>
 
         <div class="umkm__panel" id="umkm-panel-roti" role="tabpanel" aria-labelledby="umkm-tab-roti" tabindex="0" hidden>
-          <div class="umkm__visual umkm__visual--placeholder umkm__visual--roti">
-            <span class="umkm__visual-label">PRODUK LOKAL / 03</span>
-            <strong>Pabrik<br />Roti.</strong>
-            <span class="umkm__visual-status">Foto usaha belum tersedia</span>
-          </div>
+          <figure class="umkm__visual">
+            <img class="umkm__image" src="assets/images/umkm/pabrikroti.jpeg" alt="Seseorang menyiapkan roti di meja produksi dengan rak dan loyang di sekitarnya" width="2160" height="1215" loading="lazy" decoding="async" />
+            <figcaption class="umkm__image-caption">Proses pembuatan roti</figcaption>
+          </figure>
           <div class="umkm__detail">
             <p class="umkm__detail-kicker">03 / USAHA PANGAN</p>
             <h3>Pabrik Roti</h3>
-            <p class="umkm__detail-lead">Usaha pembuatan roti melengkapi ragam potensi pangan Kamasi Satu. Informasi mengenai produk, pengelola, dan proses produksinya dapat diisi setelah data terverifikasi.</p>
-            <p class="umkm__detail-note">Foto dan detail usaha masih menunggu data yang dapat dipublikasikan.</p>
+            <p class="umkm__detail-lead">Usaha roti menjadi bagian dari potensi pangan Kamasi Satu. Foto memperlihatkan persiapan roti di ruang produksi, dengan loyang dan rak di sekitarnya.</p>
+            <p class="umkm__detail-note">Nama pengelola, jenis roti, dan alamat usaha dapat dilengkapi setelah data tersedia.</p>
           </div>
         </div>
       </section>

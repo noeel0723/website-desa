@@ -1,12 +1,7 @@
-import { initNavbar } from "./navbar.js";
-import { initAnimations } from "./animation.js";
-import { initUmkmTabs } from "./umkm.js";
-
 function initImageFallbacks() {
   const images = [
     [".hero__image", ".hero__visual", "hero__visual--image-missing"],
     [".profile__image", ".profile__image-wrap", "profile__image-wrap--image-missing"],
-    [".umkm__image", ".umkm__visual", "umkm__visual--image-missing"],
   ];
 
   images.forEach(([imageSelector, containerSelector, fallbackClass]) => {
@@ -15,6 +10,13 @@ function initImageFallbacks() {
     if (!image || !container) return;
 
     const showFallback = () => container.classList.add(fallbackClass);
+    image.addEventListener("error", showFallback);
+    if (image.complete && image.naturalWidth === 0) showFallback();
+  });
+
+  document.querySelectorAll(".umkm__visual .umkm__image").forEach((image) => {
+    const container = image.closest(".umkm__visual");
+    const showFallback = () => container.classList.add("umkm__visual--image-missing");
     image.addEventListener("error", showFallback);
     if (image.complete && image.naturalWidth === 0) showFallback();
   });

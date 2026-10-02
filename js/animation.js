@@ -1,4 +1,4 @@
-export function initAnimations() {
+function initAnimations() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
 
   const targets = document.querySelectorAll(".stats__card, .profile__header, .profile__image-wrap, .profile__summary, .umkm__header, .umkm__tabs, .structure__header, .structure-card, .contact__header, .contact__feature, .contact-card, .profile-page__overview, .profile-page__section, .profile-page__next");

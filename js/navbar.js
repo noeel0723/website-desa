@@ -1,4 +1,4 @@
-export function initNavbar() {
+function initNavbar() {
   const header = document.querySelector(".site-header");
   const toggle = document.querySelector(".navbar__toggle");
   const mobileMenu = document.querySelector(".navbar__mobile");

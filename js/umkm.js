@@ -1,4 +1,4 @@
-export function initUmkmTabs() {
+function initUmkmTabs() {
   const tablist = document.querySelector('.umkm__tabs');
   if (!tablist) return;
 
