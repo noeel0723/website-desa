@@ -10,6 +10,13 @@ function initHeroTabs() {
   const status = document.getElementById('hero-video-status');
   const placeholderText = status.textContent;
   const hasVideo = Boolean(video.getAttribute('src') || video.querySelector('source[src]'));
+  const viewport = hero.querySelector('.hero__viewport');
+  let activeIndex = 0;
+
+  function updateViewportHeight() {
+    // Ukur panel aktif agar panel Beranda yang lebih tinggi tidak menyisakan ruang kosong.
+    viewport.style.setProperty('--hero-panel-height', `${panels[activeIndex].offsetHeight}px`);
+  }
 
   function showVideoPlaceholder() {
     video.pause();
@@ -36,6 +43,7 @@ function initHeroTabs() {
   });
 
   function activate(index, moveFocus = false) {
+    activeIndex = index;
     hero.classList.toggle('hero--video', index === 1);
     hero.setAttribute('aria-labelledby', index === 1 ? 'hero-video-title' : 'hero-title');
     tabs.forEach((tab, tabIndex) => {
@@ -46,6 +54,7 @@ function initHeroTabs() {
       panels[tabIndex].setAttribute('aria-hidden', String(!selected));
     });
     if (index === 0) video.pause();
+    updateViewportHeight();
     if (moveFocus) tabs[index].focus();
   }
 
@@ -64,4 +73,12 @@ function initHeroTabs() {
 
   activate(0);
   tablist.hidden = false;
+  updateViewportHeight();
+
+  if ('ResizeObserver' in window) {
+    const resizeObserver = new ResizeObserver(updateViewportHeight);
+    panels.forEach((panel) => resizeObserver.observe(panel));
+  } else {
+    window.addEventListener('resize', updateViewportHeight);
+  }
 }

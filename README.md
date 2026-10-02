@@ -44,6 +44,8 @@ Menu **Beranda / Video Profil** menggeser tampilan hero secara manual, tanpa aut
 
 Gunakan video yang dioptimalkan untuk web. Pemutaran hanya dimulai saat pengunjung menekan Putar, dan berhenti ketika kembali ke Beranda. Menu mendukung tombol panah, Home/End, serta reduced motion. Tambahkan `<track kind="captions" ... />` jika video mempunyai narasi agar aksesibel.
 
+Area video dan gambar sementara memakai rasio **16:9**. Tinggi hero mengikuti panel aktif agar tampilan mobile tidak menyisakan ruang kosong. Setelah sumber video ditambahkan, kontrol pemutar bawaan browser menyediakan tombol layar penuh pada browser yang mendukungnya; `playsinline` memungkinkan pemutaran biasa di dalam halaman. Video dengan rasio lain tetap ditampilkan utuh tanpa pemotongan.
+
 ## Agama penduduk
 
 Data pada halaman Profil mengikuti jumlah yang diberikan pengguna: Katolik **75**, Islam **36**, Kristen **955**. Total **1.066 jiwa**. Angka dapat diganti langsung pada `.profile-page__religion-grid` di `profile.html`.
