@@ -48,7 +48,7 @@ Area video dan gambar sementara memakai rasio **16:9**. Tinggi hero mengikuti pa
 
 ## Agama penduduk
 
-Data pada halaman Profil mengikuti jumlah yang diberikan pengguna: Katolik **75**, Islam **36**, Kristen **955**. Total **1.066 jiwa**. Angka dapat diganti langsung pada `.profile-page__religion-grid` di `profile.html`.
+Data pada halaman Profil mengikuti jumlah yang diberikan pengguna: Katolik **67**, Islam **36**, dan sisanya Kristen **963** (1.066 − 67 − 36). Total **1.066 jiwa**. Angka dapat diganti langsung pada `.profile-page__religion-grid` di `profile.html`.
 
 ## Aspirasi warga
 
