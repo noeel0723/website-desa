@@ -67,9 +67,6 @@
   .history__item:not(:last-child)::before { top: 41px; left: 18px; }
   .history__item h3 { font-size: 20px; }
   .history__item div > p:last-child { font-size: 11px; }
-  .structure-card { min-height: 200px; padding: 22px; }
-  .structure-card h3 { font-size: 21px; }
-  .structure-card--lead { min-height: 170px; }
   .contact__feature { min-height: 565px; padding: 28px; }
   .contact__feature h3 { font-size: 44px; }
   .contact-card { padding: 22px 8px; }
@@ -219,12 +216,12 @@
   .history__timeline-wrap { padding: 28px; }
   .structure__branches { display: none; }
   .structure__team { grid-template-columns: 1fr; gap: 12px; margin-top: 12px; }
-  .structure__team .structure-card::before { display: none; }
-  .structure-card { min-height: 0; padding: 22px; }
-  .structure-card--lead { width: 100%; min-height: 155px; }
-  .structure__neighborhoods { margin-top: 36px; padding-top: 28px; scroll-margin-top: 80px; }
+  .structure-card { min-height: 0; padding: 16px 18px; }
+  .structure-card--lead { min-height: 96px; padding: 18px; }
+  .structure__neighborhoods { margin-top: 24px; padding-top: 22px; scroll-margin-top: 80px; }
   .structure__neighborhoods-header { align-items: flex-start; flex-direction: column; gap: 12px; }
-  .structure__neighborhoods-grid { gap: 12px; margin-top: 20px; }
+  .structure__neighborhoods-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 16px; }
+  .neighborhood-card__people { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
   .contact__grid { grid-template-columns: 1fr; gap: 14px; }
   .contact__feature { min-height: 340px; }
   .contact__map { margin-top: 14px; padding: 24px; scroll-margin-top: 80px; }
@@ -318,13 +315,9 @@
   .history__footnote,
   .structure__footnote,
   .contact__footnote { font-size: 12px; }
-  .structure-card { border-radius: 18px; padding: 20px; }
-  .structure-card--lead { gap: 17px; padding: 20px; }
-  .structure-card--lead .structure-card__index { width: 44px; height: 44px; }
-  .structure-card h3 { font-size: 22px; }
+  .structure-card h3 { font-size: 18px; }
   .structure-card__symbol { display: none; }
-  .structure__neighborhoods-header h3 { font-size: 28px; }
-  .neighborhood-card { border-radius: 18px; padding: 20px; }
+  .structure__neighborhoods-header h3 { font-size: 22px; }
   .contact__feature { min-height: 300px; border-radius: 18px; padding: 24px; }
   .contact__feature h3 { font-size: 40px; }
   .contact__feature div p { font-size: 13px; }

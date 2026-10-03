@@ -434,68 +434,49 @@
 .structure-card {
   position: relative;
   min-width: 0;
-  min-height: 210px;
+  min-height: 100px;
   border: 1px solid var(--border);
-  border-radius: var(--radius-large);
-  background: #f6f8f3;
-  padding: 28px;
-  transition: transform 220ms ease, box-shadow 220ms ease;
+  border-radius: var(--radius-medium);
+  background: var(--surface);
+  padding: 18px;
 }
-
-.structure-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-soft); }
 
 .structure-card--lead {
-  display: flex;
-  width: min(100%, 510px);
-  min-height: 185px;
-  align-items: center;
-  gap: 28px;
+  width: min(100%, 360px);
+  min-height: 104px;
   margin-inline: auto;
-  border-color: #d5dfd0;
-  background: #eaf0e6;
-  padding: 33px;
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--surface);
+  padding: 20px 24px;
+  text-align: center;
 }
 
-.structure-card__index {
-  display: grid;
-  width: 39px;
-  height: 39px;
-  place-items: center;
-  border-radius: 12px;
-  background: #e7eee2;
-  color: var(--primary);
-  font-size: 11px;
-  font-weight: 700;
-}
-
-.structure-card--lead .structure-card__index { width: 54px; height: 54px; flex: none; border-radius: 17px; background: var(--primary); color: var(--surface); font-size: 13px; }
 .structure-card__body { min-width: 0; }
-.structure-card__eyebrow { margin-top: 21px; color: var(--primary-light); font-size: 10px; font-weight: 700; letter-spacing: 0.09em; line-height: 1.4; text-transform: uppercase; }
-.structure-card--lead .structure-card__eyebrow { margin-top: 0; }
-.structure-card h3 { margin-top: 11px; font-size: 26px; font-weight: 550; letter-spacing: -0.05em; line-height: 1.15; }
+.structure-card__eyebrow { color: var(--text-secondary); font-size: 12px; line-height: 1.45; }
+.structure-card--lead .structure-card__eyebrow { color: rgb(255 255 255 / 80%); }
+.structure-card h3 { margin-top: 8px; font-size: 18px; font-weight: 550; letter-spacing: -0.035em; line-height: 1.3; overflow-wrap: anywhere; }
+.structure-card--lead h3 { font-size: 21px; }
 .structure-card p:last-child { margin-top: 9px; color: var(--text-secondary); font-size: 12px; line-height: 1.6; }
 .structure-card__symbol { align-self: flex-start; margin-left: auto; color: var(--primary); font-size: 20px; }
-.structure__team .structure-card::before { position: absolute; bottom: 100%; left: 50%; height: 19px; border-left: 1px solid #d8e1d4; content: ""; }
 
 .neighborhood-card {
-  flex: 1 1 270px;
-  max-width: 350px;
   min-width: 0;
   border: 1px solid #dfe8da;
-  border-radius: 22px;
+  border-radius: var(--radius-medium);
   background: #eaf1e3;
-  padding: 22px 24px;
+  padding: 18px;
   transition: background 220ms ease, transform 220ms ease;
 }
 
 .neighborhood-card:hover { background: #e5eedc; transform: translateY(-2px); }
-.neighborhood-card__heading { display: flex; align-items: center; gap: 13px; }
-.neighborhood-card__number { display: grid; width: 44px; height: 44px; flex: none; place-items: center; border-radius: 13px; background: var(--surface); color: var(--primary); font-size: 16px; font-weight: 700; }
-.neighborhood-card__heading h4 { min-width: 0; font-size: 19px; font-weight: 550; letter-spacing: -0.04em; }
-.neighborhood-card__people { display: grid; gap: 13px; margin-top: 21px; }
+.neighborhood-card__heading { display: flex; align-items: center; gap: 10px; }
+.neighborhood-card__number { display: grid; width: 32px; height: 32px; flex: none; place-items: center; border-radius: var(--radius-small); background: var(--surface); color: var(--primary); font-size: 13px; font-weight: 650; }
+.neighborhood-card__heading h4 { min-width: 0; margin: 0; font-size: 16px; font-weight: 550; letter-spacing: -0.035em; }
+.neighborhood-card__people { display: grid; gap: 10px; margin: 14px 0 0; }
 .neighborhood-card__people dt { color: var(--text-secondary); font-size: 11px; font-weight: 650; letter-spacing: 0.03em; }
 .neighborhood-card__people dt span { font-weight: 400; }
-.neighborhood-card__people dd { margin: 4px 0 0; color: var(--primary); font-size: 15px; font-weight: 550; line-height: 1.3; }
+.neighborhood-card__people dd { margin: 4px 0 0; color: var(--primary); font-size: 14px; font-weight: 550; line-height: 1.4; overflow-wrap: anywhere; }
 
 .contact__feature {
   position: relative;
@@ -532,10 +513,11 @@
 
 .contact-card {
   min-width: 0;
+  background: var(--surface);
   padding: 24px 8px;
 }
 
-.contact-card:first-child { border: 1px solid #e0e8d8; border-radius: var(--radius-medium); background: #e8f0de; padding-inline: 24px; }
+.contact-card:first-child { border: 1px solid var(--border); border-radius: var(--radius-medium); padding-inline: 24px; }
 .contact-card:not(:first-child) { border-bottom: 1px solid var(--border); }
 .contact-card h3 { font-size: 23px; font-weight: 550; letter-spacing: -0.04em; line-height: 1.2; }
 .contact-card p { max-width: 800px; margin-top: 8px; color: var(--text-secondary); font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; }

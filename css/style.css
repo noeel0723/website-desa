@@ -441,7 +441,9 @@ main {
 
 .umkm { background: var(--surface); padding: clamp(24px, 3.6vw, 44px); }
 .history { background: #f4f3ed; }
-.structure { background: var(--surface); }
+.structure { background: #fafbf7; padding: clamp(24px, 3.6vw, 44px); }
+.structure .structure__header { display: block; margin-bottom: 26px; }
+.structure .structure__title { margin-top: 0; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.15; }
 .contact { background: #fafbf7; padding: clamp(28px, 4vw, 52px); }
 
 .history__header,
@@ -577,8 +579,8 @@ main {
 
 .structure__branches {
   position: relative;
-  height: 56px;
-  margin-inline: 16.66%;
+  height: 24px;
+  margin-inline: 0;
   border-bottom: 1px solid #d8e1d4;
 }
 
@@ -594,15 +596,15 @@ main {
 .structure__team {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  gap: 14px;
   margin-top: 18px;
 }
 
 .structure__neighborhoods {
   max-width: 1120px;
-  margin: 48px auto 0;
+  margin: 28px auto 0;
   border-top: 1px solid var(--border);
-  padding-top: 36px;
+  padding-top: 24px;
   scroll-margin-top: 100px;
 }
 
@@ -622,7 +624,7 @@ main {
 
 .structure__neighborhoods-header h3 {
   margin-top: 8px;
-  font-size: clamp(26px, 2.8vw, 34px);
+  font-size: clamp(22px, 2.4vw, 26px);
   font-weight: 550;
   letter-spacing: -0.05em;
   line-height: 1.15;
@@ -636,11 +638,10 @@ main {
 }
 
 .structure__neighborhoods-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
 }
 
 .contact__grid {
