@@ -37,13 +37,13 @@ Lalu buka `http://localhost:8000/` dan `http://localhost:8000/profile.html`.
 
 ## Video profil pada Beranda
 
-Menu **Beranda / Video Profil** menggeser tampilan hero secara manual, tanpa autoplay. Selama belum ada video, tampilan memakai gambar hero lokal. Untuk memasang video:
+Menu **Beranda / Video Profil** menggeser tampilan hero secara manual, tanpa autoplay. Video profil memakai file lokal **`assets/vids.mp4`**. Gambar hero tetap menjadi poster sebelum pemutaran dan fallback bila video gagal dimuat. Untuk mengganti video:
 
-1. Buat folder `assets/videos/` dan simpan video, misalnya `profil-kamasi.mp4`.
-2. Pada `index.html`, tambahkan `<source src="assets/videos/profil-kamasi.mp4" type="video/mp4" />` di dalam elemen `<video class="hero__video">` (contoh tersedia pada komentar HTML).
-3. Muat ulang halaman. JavaScript menampilkan pemutar secara otomatis jika sumber video diisi; sumber yang gagal dimuat kembali ke gambar placeholder.
+1. Ganti file `assets/vids.mp4`, atau simpan video baru di dalam folder `assets/`.
+2. Jika nama/lokasi berubah, sesuaikan `<source src="assets/vids.mp4" type="video/mp4" />` dan tautan fallback di dalam elemen `<video class="hero__video">` pada `index.html`.
+3. Muat ulang halaman. JavaScript menampilkan pemutar secara otomatis jika sumber video diisi; sumber yang gagal dimuat kembali ke gambar placeholder dengan pesan yang sesuai.
 
-Gunakan video yang dioptimalkan untuk web. Pemutaran hanya dimulai saat pengunjung menekan Putar, dan berhenti ketika kembali ke Beranda. Menu mendukung tombol panah, Home/End, serta reduced motion. Tambahkan `<track kind="captions" ... />` jika video mempunyai narasi agar aksesibel.
+Gunakan video MP4 yang dioptimalkan untuk web (H.264/AAC untuk kompatibilitas luas). File saat ini sekitar 43 MB; `preload="none"` mencegah pengunduhan video sebelum pengunjung memulai pemutaran. Pemutaran hanya dimulai saat pengunjung menekan Putar, dan dijeda ketika kembali ke Beranda. Menu mendukung tombol panah, Home/End, serta reduced motion. Tambahkan `<track kind="captions" ... />` jika video mempunyai narasi agar aksesibel.
 
 Area video dan gambar sementara memakai rasio **16:9**. Tinggi hero mengikuti panel aktif agar tampilan mobile tidak menyisakan ruang kosong. Setelah sumber video ditambahkan, kontrol pemutar bawaan browser menyediakan tombol layar penuh pada browser yang mendukungnya; `playsinline` memungkinkan pemutaran biasa di dalam halaman. Video dengan rasio lain tetap ditampilkan utuh tanpa pemotongan.
 

@@ -8,7 +8,7 @@ function initHeroTabs() {
   const video = hero.querySelector('.hero__video');
   const poster = hero.querySelector('.hero__video-poster');
   const status = document.getElementById('hero-video-status');
-  const placeholderText = status.textContent;
+  const placeholderText = 'Video profil belum tersedia atau tidak dapat diputar. Untuk sementara, nikmati potret Kamasi Satu.';
   const hasVideo = Boolean(video.getAttribute('src') || video.querySelector('source[src]'));
   const viewport = hero.querySelector('.hero__viewport');
   let activeIndex = 0;
@@ -33,6 +33,8 @@ function initHeroTabs() {
     video.parentElement.classList.add('hero__video-frame--available');
     video.addEventListener('error', showVideoPlaceholder);
     video.querySelectorAll('source').forEach((source) => source.addEventListener('error', showVideoPlaceholder));
+  } else {
+    showVideoPlaceholder();
   }
 
   panels.forEach((panel, index) => {
