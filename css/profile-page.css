@@ -186,6 +186,19 @@
 .profile-page__religion-grid strong { color: var(--primary); font-size: 34px; font-weight: 550; letter-spacing: -0.05em; line-height: 1; }
 .profile-page__religion-grid dd span { color: var(--text-secondary); font-size: 11px; }
 
+.profile-page__community { margin-top: 32px; }
+.profile-page__community-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.profile-page__community-group { min-width: 0; }
+.profile-page__community-group h3 { padding-bottom: 12px; font-size: 19px; font-weight: 550; letter-spacing: -0.035em; }
+.profile-page__community-list { margin: 0; }
+.profile-page__community-list > div { border-top: 1px solid var(--border); padding-block: 14px; }
+.profile-page__community-list dt { color: var(--text-secondary); font-size: 12px; line-height: 1.5; }
+.profile-page__community-list dd { margin: 6px 0 0; font-size: 15px; font-weight: 550; line-height: 1.5; overflow-wrap: anywhere; }
+.profile-page__community-list dd small { display: block; margin-top: 4px; color: var(--text-secondary); font-size: 10px; font-weight: 400; }
+.profile-page__community a { color: var(--primary); text-underline-offset: 4px; }
+.profile-page__community a:hover { text-decoration: underline; }
+.profile-page__community .profile-page__population-source { margin-top: 14px; }
+
 .profile-page__timeline { margin: 26px 0 0; padding: 0; list-style: none; }
 .profile-page__timeline li { display: grid; grid-template-columns: 88px minmax(0, 1fr); align-items: start; gap: 24px; border-top: 1px solid var(--border); padding: 20px 0; }
 .profile-page__timeline li:last-child { border-bottom: 1px solid #dce3d8; }
@@ -235,6 +248,7 @@
   .profile-page__metrics > div:nth-child(3) { border-left: 0; padding-left: 0; }
   .profile-page__metrics > div:nth-child(n+3) { border-top: 1px solid var(--border); }
   .profile-page__population-details { gap: 22px; }
+  .profile-page__community-grid { gap: 20px; }
 }
 
 @media (max-width: 767px) {
@@ -268,6 +282,8 @@
   .profile-page__gender-label { font-size: 12px; gap: 6px; }
   .profile-page__gender-label small { flex-basis: 100%; margin-left: 14px; }
   .profile-page__population-details { grid-template-columns: 1fr; gap: 26px; margin-top: 28px; }
+  .profile-page__community { margin-top: 26px; }
+  .profile-page__community-grid { grid-template-columns: 1fr; gap: 22px; }
   .profile-page__timeline { margin-top: 22px; }
   .profile-page__timeline li { grid-template-columns: 62px minmax(0, 1fr); gap: 16px; padding-block: 18px; }
   .profile-page__year { font-size: 22px; }
