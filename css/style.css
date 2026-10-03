@@ -439,7 +439,7 @@ main {
   scroll-margin-top: 100px;
 }
 
-.umkm { background: var(--surface); }
+.umkm { background: var(--surface); padding: clamp(24px, 3.6vw, 44px); }
 .history { background: #f4f3ed; }
 .structure { background: var(--surface); }
 .contact { background: #fafbf7; padding: clamp(28px, 4vw, 52px); }
@@ -484,26 +484,26 @@ main {
 }
 
 .umkm__eyebrow { color: var(--primary-light); font-size: 10px; font-weight: 700; letter-spacing: 0.14em; }
-.umkm__title { margin-top: 17px; font-size: clamp(48px, 5.6vw, 72px); font-weight: 550; letter-spacing: -0.07em; line-height: 1.02; }
+.umkm__title { margin-top: 0; font-size: clamp(32px, 3.4vw, 44px); font-weight: 550; letter-spacing: -0.055em; line-height: 1.15; }
 .umkm__title span { color: var(--primary); }
-.umkm__intro { max-width: 720px; margin-top: 18px; color: var(--text-secondary); font-size: clamp(16px, 1.6vw, 19px); line-height: 1.6; }
+.umkm__intro { max-width: 670px; margin-top: 12px; color: var(--text-secondary); font-size: 14px; line-height: 1.65; }
 
 .umkm__panel {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 0.9fr 1.1fr;
   align-items: center;
-  gap: clamp(24px, 3.5vw, 48px);
-  margin-top: 26px;
+  gap: clamp(22px, 2.6vw, 32px);
+  margin-top: 20px;
 }
 .umkm__panel[hidden] { display: none; }
 
 .umkm__visual {
   position: relative;
   min-width: 0;
-  min-height: 360px;
+  height: clamp(220px, 22vw, 280px);
   margin: 0;
   overflow: hidden;
-  border-radius: var(--radius-large);
+  border-radius: var(--radius-medium);
   background: #e2e9dc;
 }
 
@@ -545,9 +545,9 @@ main {
 
 .umkm__detail { min-width: 0; padding-block: 8px; }
 .umkm__detail-kicker { color: var(--primary-light); font-size: 10px; font-weight: 700; letter-spacing: 0.12em; }
-.umkm__detail h3 { margin-top: 12px; font-size: clamp(36px, 3.6vw, 48px); font-weight: 550; letter-spacing: -0.065em; line-height: 1.06; }
-.umkm__detail-lead { max-width: 530px; margin-top: 16px; color: var(--text-secondary); font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; }
-.umkm__detail-note { max-width: 530px; margin-top: 20px; border-top: 1px solid var(--border); padding-top: 16px; color: var(--text-secondary); font-size: 12px; line-height: 1.6; }
+.umkm__detail h3 { margin-top: 8px; font-size: clamp(26px, 2.6vw, 32px); font-weight: 550; letter-spacing: -0.045em; line-height: 1.15; }
+.umkm__detail-lead { max-width: 530px; margin-top: 12px; color: var(--text-secondary); font-size: 14px; line-height: 1.65; }
+.umkm__detail-note { max-width: 530px; margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px; color: var(--text-secondary); font-size: 12px; line-height: 1.6; }
 
 .umkm__footnote,
 .history__footnote,
